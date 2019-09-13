@@ -67,3 +67,18 @@ img {
   background-color: #ced7e0;
   height: 40vh;
 }
+
+/* Layout stylings */
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-list li {
+  margin: 0 1em;
+}
+
+.submenu {
+  display: none;
+}
