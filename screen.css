@@ -44,6 +44,20 @@ html {
   line-height: 1.222em; /* 22px / 18px = 1.222... */
 }
 
+h1 {
+  color: white;
+  font-family: Ostrich, Calibri, sans-serif;
+  font-size: 3em;
+  line-height: 1.3em;
+}
+
+h2 {
+  color: #004e76;
+  font-family: Ostrich, Calibri, sans-serif;
+  font-size: 2.5em; /* 27px / 18px  = 1.55 */
+  line-height: 1.3em; /* 32 / 18px  = 1.1852 */
+}
+
 img {
   display: block;
   max-width: 100%:
