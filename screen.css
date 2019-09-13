@@ -69,6 +69,13 @@ img {
 }
 
 /* Layout stylings */
+
+footer section {
+  margin: auto;
+  padding: 3em 0;
+  width: 80%;
+}
+
 .header {
   align-items: center;
   background-color: #282828;
