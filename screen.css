@@ -94,6 +94,27 @@ img {
   background: linear-gradient(#7cf2ca, #b2f286);
 }
 
+.home-section div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: auto;
+  padding: 3em 0;
+  width: 60%;
+}
+
+.home-img img {
+  width: 20vw;
+}
+
+.home-info {
+  width: 60%;
+}
+
+.home-info p {
+  margin-top: 1em;
+}
+
 .nav-list {
   display: flex;
   flex-direction: row;
