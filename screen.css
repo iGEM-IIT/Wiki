@@ -78,6 +78,22 @@ img {
   padding: 0 2em;
 }
 
+#home-about {
+  background: linear-gradient(#28b6ff, #79d2fe);
+}
+
+#home-problem {
+  background: linear-gradient(#79d2fe, #78d1ff);
+}
+
+#home-solution {
+  background: linear-gradient(#78d1ff, #7cf2ca);
+}
+
+#home-vision {
+  background: linear-gradient(#7cf2ca, #b2f286);
+}
+
 .nav-list {
   display: flex;
   flex-direction: row;
