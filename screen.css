@@ -26,3 +26,30 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 /* Begin site styles below */
+a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Staatliches', cursive;
+  font-size: 1.3em;
+}
+
+footer {
+  background-color: #282828;
+}
+
+html {
+  color: black;
+  font-family: Cloud, Calibri, Arial, serif;
+  font-size: 1.125em; /* 18px / 16px = 1.125em */
+  line-height: 1.222em; /* 22px / 18px = 1.222... */
+}
+
+img {
+  display: block;
+  max-width: 100%:
+}
+
+#banner {
+  background-color: #ced7e0;
+  height: 40vh;
+}
