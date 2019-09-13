@@ -69,6 +69,14 @@ img {
 }
 
 /* Layout stylings */
+.header {
+  align-items: center;
+  background-color: #282828;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 0 2em;
+}
 
 .nav-list {
   display: flex;
