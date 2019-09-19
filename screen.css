@@ -125,6 +125,43 @@ footer section {
   margin-top: 1em;
 }
 
+.member-team {
+  /* background-color: pink; */
+  margin: 1em 15vw 1em 5vw;
+}
+
+.member-team ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.member-team h3 {
+  color: #004e76;
+  font-family: Ostrich, Calibri, sans-serif;
+  font-size: 2.3em;
+  line-height: 1.3em;
+}
+
+.member {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.member img {
+  width: 100%;
+}
+
+.member figure {
+  width: 40%;
+  flex-shrink: 0;
+}
+
+.member-info {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
 .nav-list {
   display: flex;
   flex-direction: row;
