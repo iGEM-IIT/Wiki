@@ -38,10 +38,15 @@ footer {
 }
 
 html {
+  background-image: url("assets/images/bg1.png");
+  background-size: 100vw;
+  background-position: top;
+  background-repeat: repeat;
+  background-color: #f4f4f4;
   color: black;
   font-family: Cloud, Calibri, Arial, serif;
   font-size: 1.125em; /* 18px / 16px = 1.125em */
-  line-height: 1.222em; /* 22px / 18px = 1.222... */
+  line-height: 1.3em; /* 22px / 18px = 1.222... */
 }
 
 h1 {
