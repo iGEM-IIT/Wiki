@@ -178,10 +178,12 @@ footer section {
 .page-header {
   align-items: center;
   background-image: url("assets/images/bg-header.png");
+  background-repeat: no-repeat;
   background-size: 100vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 5em;
+  max-height: 20vh;
   padding: 3em;
 }
 
