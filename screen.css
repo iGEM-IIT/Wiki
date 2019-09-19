@@ -90,23 +90,7 @@ footer section {
   padding: 0 2em;
 }
 
-#home-about {
-  background: linear-gradient(#28b6ff, #79d2fe);
-}
-
-#home-problem {
-  background: linear-gradient(#79d2fe, #78d1ff);
-}
-
-#home-solution {
-  background: linear-gradient(#78d1ff, #7cf2ca);
-}
-
 #home-vision {
-  background: linear-gradient(#7cf2ca, #b2f286);
-}
-
-#home-vision div  {
   display: block;
   margin: auto;
   padding: 1em 0 3em 0;
