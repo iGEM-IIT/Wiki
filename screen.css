@@ -103,17 +103,18 @@ footer section {
   margin-bottom: 0.5em;
 }
 
-.home-section div {
+.home-section {
+  align-items: center;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   margin: auto;
   padding: 3em 0;
-  width: 60%;
+  width: 50vw;
 }
 
 .home-img img {
-  width: 20vw;
+  width: 18vw;
 }
 
 .home-info {
