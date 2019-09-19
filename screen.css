@@ -137,3 +137,18 @@ footer section {
 .submenu {
   display: none;
 }
+
+.page-header {
+  align-items: center;
+  background-image: url("assets/images/bg-header.png");
+  background-size: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5em;
+  padding: 3em;
+}
+
+.page-header h2 {
+  font-size: 6em;
+  line-height: 0.8em;
+}
