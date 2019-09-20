@@ -68,6 +68,10 @@ img {
   max-width: 100%:
 }
 
+main {
+  padding-bottom: 3em;
+}
+
 #banner {
   background-color: #ced7e0;
   height: 40vh;
@@ -123,6 +127,12 @@ footer section {
 
 .home-info p {
   margin-top: 1em;
+}
+
+#team-page {
+    background-image: url("assets/images/bg2.png");
+    background-size: 100vw;
+    background-position: top;
 }
 
 .member-team {
