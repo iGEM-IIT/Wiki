@@ -6,61 +6,95 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
   <link rel="stylesheet" href="screen.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" >
 </head>
 <!--beginning of page content-->
 
 <body>
   <!--contains header title and navigation bar-->
-  <header id="header">
-    <h1 id="title">Product Name</h1>
+  <header class="header">
+    <h1 class="title">Green Ocean</h1>
     <nav class="menu">
       <ul class="nav-list">
         <li><a href="#">Home</a></li>
         <li><a href="#">Team</a></li>
-        <li><a href="#">Project</a></li>
-        <ul class="submenu">
-          <li><a href="#">Description</a></li>
-          <li><a href="#">Design</a></li>
-          <li><a href="#">Experiments</a></li>
-          <li><a href="#">Notebook</a></li>
-          <li><a href="#">Contribution</a></li>
-          <li><a href="#">Results</a></li>
-          <li><a href="#">Demonstrate</a></li>
-          <li><a href="#">Improve</a></li>
-          <li><a href="#">Attributions</a></li>
-        </ul>
+        <li><a href="#">Project</a>
+          <ul class="submenu">
+            <li><a href="#">Description</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Experiments</a></li>
+            <li><a href="#">Notebook</a></li>
+            <li><a href="#">Contribution</a></li>
+            <li><a href="#">Results</a></li>
+            <li><a href="#">Demonstrate</a></li>
+            <li><a href="#">Improve</a></li>
+            <li><a href="#">Attributions</a></li>
+          </ul>
+        </li>
         <li><a href="#">Parts</a></li>
         <li><a href="#">Safety</a></li>
         <li><a href="#">Human Practices</a></li>
-        <li><a href="#">Awards</a></li>
-        <ul class="submenu">
-          <li><a href="#">Entrepreneurship</a></li>
-          <li><a href="#">Plant Synthetic Biology</a></li>
-        </ul>
+        <li><a href="#">Awards</a>
+          <ul class="submenu">
+            <li><a href="#">Entrepreneurship</a></li>
+            <li><a href="#">Plant Synthetic Biology</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </header>
   <!-- All content after navbar goes here -->
-  <main>
+  <main id="home-page">
     <figure id="banner">
       <img src="" alt="">
     </figure>
-    <section class="home-section">
-      <h2>What is it?</h2>
+    <!-- Block of information: what is this? -->
+    <section class="home-section" id="home-about">
+        <article class="home-info">
+          <h2>What is it?</h2>
+          <p>A genetically engineered cyanobacteria which degrades polyethylene terephthalate. Green Ocean has design cyanobacteria Synechococcus Elongatus to port and express the PETease gene found in Ideonella Sakaiensis. This allows the enzyme to be carried by cyanobacteria and work in the marine environment.</p>
+        </article>
+        <figure class="home-img">
+          <img src="assets/images/temp2.jpg" alt="">
+        </figure>
     </section>
-    <section class="home-section">
-      <h2>The Problem</h2>
+
+    <!-- Block of info: the problem -->
+    <section class="home-section" id="home-problem">
+        <figure class="home-img">
+          <img src="assets/images/temp2.jpg" alt="">
+        </figure>
+        <article class="home-info">
+          <h2>The Problem</h2>
+          <p>In March 2019, a whale washed ashore the Philippines with 88 lbs. of plastic in its stomach (National Geographic). This was caused by the presence of microplastics in the ocean which is now negatively affecting over 600 species of marine life. Microplastics’ resistance to degradation is causing organisms on all levels of the food chain to frequently consume the material. Global ecosystems have already been disrupted since contamination and we risk further harm if we don’t address this problem immediately.</p>
+        </article>
     </section>
-    <section class="home-section">
-      <h2>Our Approach</h2>
+
+    <!-- Block of info: the solution -->
+    <section class="home-section" id="home-solution">
+        <article class="home-info">
+          <h2>The Solution</h2>
+          <p>We have optimized the I.s. PETase gene to produce an efficient enzyme, and made it compatible for expression and secretion in cyanobacteria. We accomplished this in a dual-host plasmid shuttle vector in E.coli and then transferred to cyanobacteria by conjugation. In order to test our product, we developed a PET degradation assay system consisting of fluorescent PET nanoparticles.</p>
+        </article>
+        <figure class="home-img">
+          <img src="assets/images/temp2.jpg" alt="">
+        </figure>
     </section>
-    <section class="home-section">
-      <h2>The Solution</h2>
+
+    <!-- Block of info: our vision -->
+    <section class="home-section" id="home-vision">
+        <h2>Our Vision</h2>
+        <article>
+          <p>Our goal is to help marine life by removing PET plastic in the ocean using cyanobacteria and therefore creating a “Green Ocean.”</p>
+        </article>
     </section>
   </main>
+
   <footer>
-    <p>Illinois Institute of Technology</p>
-    <p>All rights reserved</p>
+    <section>
+      <p>Illinois Institute of Technology</p>
+      <p>All rights reserved</p>
+    </section>
   </footer>
   <script src="site.js"></script>
 </body>

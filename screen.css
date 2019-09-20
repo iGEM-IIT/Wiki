@@ -6,4 +6,229 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 
+/* Font import */
+@font-face {
+  font-family: Cloud;
+  src: url("assets/fonts/CloudSoft.otf") format("opentype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Leon;
+  src: url("assets/fonts/Leon.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Ostrich;
+  src: url("assets/fonts/Ostrich.otf") format("opentype");
+  font-style: normal;
+}
+
 /* Begin site styles below */
+a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Staatliches', cursive;
+  font-size: 1.3em;
+}
+
+footer {
+  background-color: #282828;
+}
+
+html {
+  background-color: #f4f4f4;
+  color: black;
+  font-family: Cloud, Calibri, Arial, serif;
+  font-size: 1.125em; /* 18px / 16px = 1.125em */
+  line-height: 1.3em; /* 22px / 18px = 1.222... */
+}
+
+h1 {
+  color: white;
+  font-family: Ostrich, Calibri, sans-serif;
+  font-size: 3em;
+  line-height: 1.3em;
+}
+
+h2 {
+  color: #004e76;
+  font-family: Ostrich, Calibri, sans-serif;
+  font-size: 2.5em; /* 27px / 18px  = 1.55 */
+  line-height: 1.3em; /* 32 / 18px  = 1.1852 */
+}
+
+img {
+  display: block;
+  max-width: 100%:
+}
+
+main {
+  padding-bottom: 3em;
+}
+
+#home-page {
+  background-image: url("assets/images/bg1.png");
+  background-size: 100vw;
+  background-position: top;
+  background-repeat: repeat;
+}
+
+#team-page {
+    background-image: url("assets/images/bg2.png");
+    background-size: 100vw;
+    background-position: top;
+}
+
+#banner {
+  background-color: #ced7e0;
+  height: 40vh;
+}
+
+/* Layout stylings */
+
+footer section {
+  margin: auto;
+  padding: 3em 0;
+  width: 80%;
+}
+
+.header {
+  align-items: center;
+  background-color: #282828;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 0 2em;
+}
+
+/* Home section stylings */
+
+#home-vision {
+  display: block;
+  margin: auto;
+  padding: 1em 0 3em 0;
+  text-align: center;
+  width: 50%
+}
+
+#home-vision h2 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.home-section {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: auto;
+  padding: 3em 0;
+  width: 50vw;
+}
+
+.home-img img {
+  width: 18vw;
+}
+
+.home-info {
+  width: 60%;
+}
+
+.home-info p {
+  margin-top: 1em;
+}
+
+/* End of home section stylings */
+
+/* Team page stylings */
+
+.member-team {
+  /* background-color: pink; */
+  margin: 3em 15vw 0 5vw;
+}
+
+.member-team ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em 1em;
+}
+
+.member-team h3 {
+  color: #004e76;
+  font-family: Ostrich, Calibri, sans-serif;
+  font-size: 2.5em;
+  line-height: 1.3em;
+  margin-bottom: 0.3em;
+}
+
+.member {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.member img {
+  width: 100%;
+}
+
+.member figure {
+  margin-right: 1em;
+  width: 33.3333%;
+  flex-shrink: 0;
+}
+
+.member-info {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.member-name {
+  font-size: 1.5em;
+  margin-bottom: 0.37em;
+}
+
+.member-title {
+  line-height: 1em;
+}
+
+/* End of team page stylings */
+
+/* Navigation stylings */
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-list li {
+  margin: 0 1em;
+}
+
+.submenu {
+  display: none;
+}
+
+/* End of navigation stylings */
+
+/* Page title stylings */
+
+.page-header {
+  align-items: center;
+  background-image: url("assets/images/bg-header.png");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5em;
+  max-height: 20vh;
+  padding: 3em;
+}
+
+.page-header h2 {
+  font-size: 6em;
+  line-height: 0.8em;
+}
+
+/* End of page title styings */
