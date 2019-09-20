@@ -29,7 +29,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 a {
   color: white;
   text-decoration: none;
-  font-family: 'Staatliches', Leon, Calibri, sans-serif;
+  font-family: 'Staatliches', cursive;
   font-size: 1.3em;
 }
 
@@ -38,6 +38,10 @@ footer {
 }
 
 html {
+  background-image: url("assets/images/bg1.png");
+  background-size: 100vw;
+  background-position: top;
+  background-repeat: repeat;
   background-color: #f4f4f4;
   color: black;
   font-family: Cloud, Calibri, Arial, serif;
@@ -64,23 +68,6 @@ img {
   max-width: 100%:
 }
 
-main {
-  padding-bottom: 3em;
-}
-
-#home-page {
-  background-image: url("assets/images/bg1.png");
-  background-size: 100vw;
-  background-position: top;
-  background-repeat: repeat;
-}
-
-#team-page {
-    background-image: url("assets/images/bg2.png");
-    background-size: 100vw;
-    background-position: top;
-}
-
 #banner {
   background-color: #ced7e0;
   height: 40vh;
@@ -93,8 +80,6 @@ footer section {
   padding: 3em 0;
   width: 80%;
 }
-
-/* Home section stylings */
 
 .header {
   align-items: center;
@@ -140,27 +125,21 @@ footer section {
   margin-top: 1em;
 }
 
-/* End of home section stylings */
-
-/* Team page stylings */
-
 .member-team {
   /* background-color: pink; */
-  margin: 3em 15vw 0 5vw;
+  margin: 1em 15vw 1em 5vw;
 }
 
 .member-team ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2em 1em;
 }
 
 .member-team h3 {
   color: #004e76;
   font-family: Ostrich, Calibri, sans-serif;
-  font-size: 2.5em;
+  font-size: 2.3em;
   line-height: 1.3em;
-  margin-bottom: 0.3em;
 }
 
 .member {
@@ -173,8 +152,7 @@ footer section {
 }
 
 .member figure {
-  margin-right: 1em;
-  width: 33.3333%;
+  width: 40%;
   flex-shrink: 0;
 }
 
@@ -183,19 +161,6 @@ footer section {
   flex-flow: column;
   justify-content: center;
 }
-
-.member-name {
-  font-size: 1.5em;
-  margin-bottom: 0.37em;
-}
-
-.member-title {
-  line-height: 1em;
-}
-
-/* End of team page stylings */
-
-/* Navigation stylings */
 
 .nav-list {
   display: flex;
@@ -209,10 +174,6 @@ footer section {
 .submenu {
   display: none;
 }
-
-/* End of navigation stylings */
-
-/* Page title stylings */
 
 .page-header {
   align-items: center;
@@ -230,5 +191,3 @@ footer section {
   font-size: 6em;
   line-height: 0.8em;
 }
-
-/* End of page title styings */
