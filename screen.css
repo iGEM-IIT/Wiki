@@ -85,6 +85,8 @@ footer section {
   width: 80%;
 }
 
+/* Home section stylings */
+
 .header {
   align-items: center;
   background-color: #282828;
@@ -128,6 +130,10 @@ footer section {
 .home-info p {
   margin-top: 1em;
 }
+
+/* End of home section stylings */
+
+/* Team page stylings */
 
 .member-team {
   /* background-color: pink; */
@@ -175,6 +181,10 @@ footer section {
   margin-bottom: 0.37em;
 }
 
+/* End of team page stylings */
+
+/* Navigation stylings */
+
 .nav-list {
   display: flex;
   flex-direction: row;
@@ -187,6 +197,10 @@ footer section {
 .submenu {
   display: none;
 }
+
+/* End of navigation stylings */
+
+/* Page title stylings */
 
 .page-header {
   align-items: center;
@@ -204,6 +218,8 @@ footer section {
   font-size: 6em;
   line-height: 0.8em;
 }
+
+/* End of page title styings */
 
 #team-page {
   background-image: url("assets/images/bg2.png");
