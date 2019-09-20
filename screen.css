@@ -94,6 +94,8 @@ footer section {
   padding: 0 2em;
 }
 
+/* Home section stylings */
+
 #home-vision {
   display: block;
   margin: auto;
@@ -128,6 +130,10 @@ footer section {
 .home-info p {
   margin-top: 1em;
 }
+
+/* End of home section stylings */
+
+/* Team page stylings */
 
 #team-page {
     background-image: url("assets/images/bg2.png");
@@ -184,6 +190,10 @@ footer section {
   line-height: 1em;
 }
 
+/* End of team page stylings */
+
+/* Navigation stylings */
+
 .nav-list {
   display: flex;
   flex-direction: row;
@@ -196,6 +206,10 @@ footer section {
 .submenu {
   display: none;
 }
+
+/* End of navigation stylings */
+
+/* Page title stylings */
 
 .page-header {
   align-items: center;
@@ -213,3 +227,5 @@ footer section {
   font-size: 6em;
   line-height: 0.8em;
 }
+
+/* End of page title styings */
