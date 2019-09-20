@@ -38,10 +38,6 @@ footer {
 }
 
 html {
-  background-image: url("assets/images/bg1.png");
-  background-size: 100vw;
-  background-position: top;
-  background-repeat: repeat;
   background-color: #f4f4f4;
   color: black;
   font-family: Cloud, Calibri, Arial, serif;
@@ -70,6 +66,19 @@ img {
 
 main {
   padding-bottom: 3em;
+}
+
+#home-page {
+  background-image: url("assets/images/bg1.png");
+  background-size: 100vw;
+  background-position: top;
+  background-repeat: repeat;
+}
+
+#team-page {
+    background-image: url("assets/images/bg2.png");
+    background-size: 100vw;
+    background-position: top;
 }
 
 #banner {
@@ -134,12 +143,6 @@ footer section {
 /* End of home section stylings */
 
 /* Team page stylings */
-
-#team-page {
-    background-image: url("assets/images/bg2.png");
-    background-size: 100vw;
-    background-position: top;
-}
 
 .member-team {
   /* background-color: pink; */
