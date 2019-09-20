@@ -182,12 +182,15 @@ footer section {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  line-height: 1em;
 }
 
 .member-name {
   font-size: 1.5em;
   margin-bottom: 0.37em;
+}
+
+.member-title {
+  line-height: 1em;
 }
 
 /* End of team page stylings */
