@@ -26,12 +26,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 /* Begin site styles below */
-a {
+/* a {
   color: white;
   text-decoration: none;
   font-family: 'Staatliches', cursive;
   font-size: 1.3em;
-}
+} */
 
 footer {
   background-color: #282828;
@@ -197,17 +197,47 @@ footer section {
 
 /* Navigation stylings */
 
+.nav-list a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  font-family: 'Staatliches', cursive;
+  font-size: 1.3em;
+  margin: 0 0.2em;
+  padding: 0.3em 0.5em;
+}
+
+.nav-list a {
+  transition-duration: 0.3s;
+}
+
+.nav-list a:hover {
+  /* background: linear-gradient(to left, #4d40ff, #83c3ff); */
+  /* color: #282828; */
+  background-color: #6dbf34;
+  border-radius: 0.3em;
+}
+
 .nav-list {
   display: flex;
   flex-direction: row;
 }
 
-.nav-list li {
-  margin: 0 1em;
+.submenu {
+  background-color: #282828;
+  display: none;
+  position: absolute;
+  /* margin-top: 0.5em; */
+  padding: 0.3em 0;
+  transition: all 0.3s ease;
+  visibility: hidden;
 }
 
-.submenu {
-  display: none;
+.nav-list li:hover > .submenu,
+.nav-list li:focus-within > .submenu,
+.submenu:hover {
+  visibility: visible;
+  display: block;
 }
 
 /* End of navigation stylings */
