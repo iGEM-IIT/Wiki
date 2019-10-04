@@ -75,7 +75,7 @@ main {
   background-repeat: repeat;
 }
 
-#team-page {
+main {
     background-image: url("assets/images/bg2.png");
     background-size: 100vw;
     background-position: top;
