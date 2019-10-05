@@ -26,12 +26,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 /* Begin site styles below */
-a {
+/* a {
   color: white;
   text-decoration: none;
   font-family: 'Staatliches', cursive;
   font-size: 1.3em;
-}
+} */
 
 footer {
   background-color: #282828;
@@ -77,6 +77,12 @@ main {
 
 #team-page {
     background-image: url("assets/images/bg2.png");
+    background-size: 100vw;
+    background-position: top;
+}
+
+#description-page {
+    background-image: url("assets/images/bg3.png");
     background-size: 100vw;
     background-position: top;
 }
@@ -197,17 +203,51 @@ footer section {
 
 /* Navigation stylings */
 
+.nav-list a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  font-family: 'Staatliches', cursive;
+  font-size: 1.3em;
+  margin: 0 0.2em;
+  padding: 0.3em 0.5em;
+}
+
+.nav-list a {
+  transition-duration: 0.3s;
+}
+
+.nav-list a:hover {
+  /* background: linear-gradient(to left, #4d40ff, #83c3ff); */
+  /* color: #282828; */
+  background-color: #6dbf34;
+  border-radius: 0.3em;
+}
+
 .nav-list {
   display: flex;
   flex-direction: row;
 }
 
-.nav-list li {
-  margin: 0 1em;
+.submenu {
+  background-color: #282828;
+  display: none;
+  position: absolute;
+  /* margin-top: 0.5em; */
+  padding: 0.3em 0;
+  transition: all 0.3s ease;
+  visibility: hidden;
 }
 
-.submenu {
-  display: none;
+.nav-list li:hover > .submenu,
+.nav-list li:focus-within > .submenu,
+.submenu:hover {
+  visibility: visible;
+  display: block;
+}
+
+#logo img {
+  max-height: 4em;
 }
 
 /* End of navigation stylings */
@@ -232,3 +272,42 @@ footer section {
 }
 
 /* End of page title styings */
+
+/* General content container stylings */
+
+.content-container {
+  margin: auto;
+  width: 60%;
+}
+
+.content-container article {
+  margin: 2em 0;
+}
+
+.content-container h3 {
+  color: #6295e6;
+  font-family: Ostrich, Calibri, sans-serif;
+  font-size: 2.5em;
+  line-height: 1.3em;
+}
+
+.content-container p {
+  margin: 1em 0;
+}
+
+/* End of content container */
+
+/* Citations */
+
+.citations {
+  font-size: 0.8em;
+}
+
+.citations h3 {
+  color: #ffb78b;
+}
+
+.citations li {
+  line-height: 1.2em;
+  padding: 0.5em 0;
+}
