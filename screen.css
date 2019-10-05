@@ -296,3 +296,18 @@ footer section {
 }
 
 /* End of content container */
+
+/* Citations */
+
+.citations {
+  font-size: 0.8em;
+}
+
+.citations h3 {
+  color: #ffb78b;
+}
+
+.citations li {
+  line-height: 1.2em;
+  padding: 0.5em 0;
+}
