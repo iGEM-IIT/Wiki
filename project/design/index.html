@@ -42,7 +42,58 @@
     </nav>
   </header>
 
-  <main id="design-page">
+  <main id="description-page">
+    <section class="page-header">
+      <h2>Design</h2>
+      <p>Learn about the science and engineering behind our product on this page! Green Ocean has undergone a few trials-and-errors and you can take a peek at some of the processes we executed on our way to creating the final product.</p>
+    </section>
+    <div class="content-container">
+      <article>
+        <h3>Design Purpose</h3>
+        <p>The purpose of the superPETase vector is to possess the PETase gene and be able to properly function and be expressed by cyanobacteria, our host.</p>
+      </article>
+      <article>
+        <h3>Design Methods</h3>
+        <p> Two genes were chosen from previous research and were modified to be expressed in the desired host.</p>
+        <ol>
+          <li>SuperPETase sequence</li>
+          <li>TorA sequence.</li>
+        </ol>
+      </article>
+      <article>
+        <h3>Super PETase</h3>
+        <p>PETase gene sequence was obtained from a research paper (1). The sequence obtained is as follows:</p>
+        <img src="../../assets/images/codex1.png" alt="" class="codex">
+        <p>In the original paper it was mentioned that the gene was mutated to enhance PETase activity, but the gene sequence did not show this change. We therefore had to make the sequence change. In order to enhance activity I had to be changed to F. We had to look at the primers and look for the I we need. The primers are as follows:</p>
+        <img src="../../assets/images/codex2.png" alt="" class="codex">
+        <p>The only difference between these primers are a V and F and by looking at the codons we can identify where V and F are located and identify the reading frame.</p>
+        <img src="../../assets/images/codex3.png" alt="" class="codex">
+        <p>We then translated these codons to identify the flanking amino acids</p>
+        <img src="../../assets/images/codex4.png" alt="" class="codex">
+        <p>We then look at the original sequence and find this: CENDSIAPVNS</p>
+        <img src="../../assets/images/codex5.png" alt="" class="codex">
+        <p>We have found our I and now we can change the I to F:</p>
+        <img src="../../assets/images/codex6.png" alt="" class="codex">
+        <p>We have now made the IsPETase gene to SuperPETase.</p>
+      </article>
+      <article>
+        <h3>TorA</h3>
+        <p>In order for S. elongatus to be able to express and deliver the SuperPETase gene we need to use an excretion pathway from S. elongatus. Studies have shown that tat pathway in S. elongatus is used in cyanobacteria (2). In order to use this TorA sequence was used. TorA is  a signal peptide that would aide on the excretion of SuperPETase.</p>
+        <p>The TorA sequence is: MANNDLFQASRRRFLAQLGGLTVAGMLGPSLLTPRRATA</p>
+        <p>Which translate to the following codons:</p>
+        <img src="../../assets/images/codex7.png" alt="" class="codex">
+        <p>Both genes were then added to a vector that was created by VectorBuilder. The gene sequence is as follows.</p>
+        <p>In blue you will find the TorA sequence. Followed by the substitution of the start codon to ser highlighted in yellow. The PETase gene is found in red and in the gene you will find the mutation highlighted in orange color and a myc tag in green color</p>
+        <img src="../../assets/images/codex8.png" alt="" class="codex">
+      </article>
+      <section class="citations">
+        <h3>Citations</h3>
+        <ul>
+          <li>1.  Ma, Y., Yao, M., Li, B., Ding, M., He, B., Chen, S., Zhou, X., and Yuan, Y. (2018) Enhanced Poly(ethylene terephthalate) Hydrolase Activity by Protein Engineering. Engineering. 4, 888–893</li>
+          <li>2. Spence, E., Sarcina, M., Ray, N., Møller, S. G., Mullineaux, C. W., and Robinson, C. (2003) Membrane-specific targeting of green fluorescent protein by the Tat pathway in the cyanobacterium Synechocystis PCC6803. Molecular Microbiology. 48, 1481–1489</li>
+        </ul>
+      </section>
+    </div>
 
   </main>
 
