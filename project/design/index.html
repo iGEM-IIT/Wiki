@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>iGEM IIT Chicago</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+  <link rel="stylesheet" href="../../screen.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" />
+</head>
+<body>
+  <!--contains header title and navigation bar-->
+  <header class="header">
+    <figure id="logo">
+      <img src="../../assets/images/logo-named2.png" alt="Green Ocean">
+    </figure>
+    <!-- <h1 class="title">Green Ocean</h1> -->
+    <nav class="menu">
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Project</a>
+          <ul class="submenu">
+            <li><a href="#">Description</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Experiments</a></li>
+            <li><a href="#">Notebook</a></li>
+            <li><a href="#">Contribution</a></li>
+            <li><a href="#">Results</a></li>
+            <li><a href="#">Attributions</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Parts</a></li>
+        <li><a href="#">Awards</a>
+          <ul class="submenu">
+            <li><a href="#">Entrepreneurship</a></li>
+            <li><a href="#">Plant Synthetic Biology</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Safety</a></li>
+        <li><a href="#">Human Practices</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="design-page">
+    <section class="page-header">
+      <h2>Design</h2>
+      <p>Learn about the science and engineering behind our product on this page! Green Ocean has undergone a few trials-and-errors and you can take a peek at some of the processes we executed on our way to creating the final product.</p>
+    </section>
+    <div class="content-right-container">
+      <h3>Components</h3>
+      <p>Green Ocean has developed multiple designs in the creation of our product. You can click on any of the following components below to learn more about them.</p>
+      <section id="design-components-container">
+        <article id="primer-button" class="design-component">
+          <h4 class="component-name">Primer Design</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <img src="" alt="" class="component-icon">
+        </article>
+        <article id="petase-button" class="design-component">
+          <h4 class="component-name">Super PETase Design</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <img src="" alt="" class="component-icon">
+        </article>
+        <article id="assay-button" class="design-component">
+          <h4 class="component-name">Assay Design</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <img src="" alt="" class="component-icon">
+        </article>
+      </section>
+
+      <section id="design-information">
+        <section id="primer" class="design-content">
+
+          <section>
+            <h3>pAM and PET Fragment Primers</h3>
+            <article>
+              <h4>Design Methods</h4>
+              <p>The two plasmids being used for developing this specific cyanobacterium are pAM4788 as the backbone vector and pCS-PET_VB190412 for the superPETase gene. For convenience’s sake, they shall be referred to in this document as pAM and PET, respectively. In order to design these primers, two steps must be taken. The first step is to identify the regions of each plasmid necessary for PCR and Gibson cloning. The second step is to isolate the specific fragments of each plasmid that will be used in the PCR and cloning protocols. </p>
+            </article>
+            <article>
+              <h4>Region Identification</h4>
+              <p>In the PET plasmid, the region to be isolated is that of the designed superPETase gene (shown in yellow in Figure 1).</p>
+              <figure class="design-figure">
+                <img src="../../assets/images/primer1.jpg" alt="">
+                <figcaption>Figure 1. Graphic map of the pCS-PET_VB190412 plasmid identifying featured regions.</figcaption>
+              </figure>
+              <p>In the pAM plasmid, the region to be removed is the GFP gene (shown in green in Figure 2), leaving the rest of the plasmid as the backbone vector. The superPETase gene (yellow) is inserted where the GFP gene (green) was removed.</p>
+              <figure class="design-figure">
+                <img src="../../assets/images/primer2.jpg" alt="">
+                <figcaption>Figure 2. Graphic map of the pAM4788 plasmid identifying featured regions.</figcaption>
+              </figure>
+            </article>
+            <article>
+              <h4>PCR Primer Isolation</h4>
+              <p>The basic requirements for a PCR primer sequence is that n ≥ 18 and that Tm ≥ 55°C, where n is the number of base pairs and Tm is the melting temperature. A forward and reverse primer must be made for each fragment that is desired to be replicated. For the superPETase gene, the primers would be composed of the sequences of base pairs at the beginning and ending of the gene. For the pAM plasmid backbone, the primers would be composed of the sequences of base pairs just before and just after the GFP gene. Running PCR amplification for the pAM backbone consist of >7k base pairs. This is too large to be efficient. To compensate for this, we divided the pAM backbone into a variety of separate fragments and created primers.</p>
+            </article>
+            <article>
+              <h4>Gibson Primer Design</h4>
+              <p>For Gibson primers, fragments of the two different plasmids being joined must be combined into one primer that will overlap regions of the backbone and product vectors. The basic requirements here are that n ≥ 20 and Tm ≥ 50°C. For identification purposes, these primers will be labeled in an A-B_d fashion, where A is the whole fragment from one plasmid, B is the plasmid to which incomplete fragments of A are attached to the other whole fragment, and d is the direction (Figure 3).</p>
+              <figure class="design-figure">
+                <img src="../../assets/images/primer3.jpg" alt="">
+                <figcaption>Figure 3. Schematic description of Gibson primer structure and naming convention.</figcaption>
+              </figure>
+            </article>
+          </section>
+
+          <section>
+            <h3>Internal PETase Primers</h3>
+            <article>
+              <h4>Strategy</h4>
+              <p>We do initial screening with the sequencing primers that flack the gene insertion site  in the vector backbone. Every plasmid backbone has a _f and_r  sequencing primer which is used to sequencing interred genes, and can also be used to PCR the interest up. When screening by PCR we look for a specific size (size of insert plus flanking sequence). However this does not provide specific amplification  due to the gene, and might be misleading if there is an insert of similar size.</p>
+              <p>To confirm OUR gene is inserted, we want a specific primer, which will ONLY amplify our gene of interest. This will be a lot more diagnostic. We can do this by making primers specific to the gene, and using one of these  as the  _f or _r primers in conjunction  with the sequencing _r an d _f primers.</p>
+            </article>
+          </section>
+
+          <section>
+            <h3>Primer Summary</h3>
+            <figure class="design-figure-table">
+              <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Template</th>
+                  <th>Forward Primer</th>
+                  <th>Reverse Primer</th>
+                  <th>Size (bp)</th>
+                </tr>
+                <tr>
+                  <th>PET</th>
+                  <td>pCS_PET</td>
+                  <td>pAM_PET_f</td>
+                  <td>PET_pAM_r</td>
+                  <td>1034</td>
+                </tr>
+                <tr>
+                  <th>Frag A</th>
+                  <td>pAM</td>
+                  <td>pAM_F2</td>
+                  <td>pAM_35k_r</td>
+                  <td>3521</td>
+                </tr>
+                <tr>
+                  <th>Frag B</th>
+                  <td>pAM</td>
+                  <td>pAM_35k_f</td>
+                  <td>pAM_r</td>
+                  <td>3554</td>
+                </tr>
+              </table>
+              <figcaption>Table 1. Shows the 3 fragments used to make pAM_PET</figcaption>
+            </figure>
+            <figure class="design-figure-table">
+              <table>
+                <tr>
+                  <th>pAM_f2</th>
+                  <td>AAGGGTGGGCGCGCCGACCCAGCTTT</td>
+                </tr>
+                <tr>
+                  <th>pAM_r</th>
+                  <td>GGT GAA GGG CTC CTT CTT AAA G</td>
+                </tr>
+              </table>
+              <table>
+                <tr>
+                  <th>PET-pAM_r</th>
+                  <td>AAT AGG TCG TTG TTT GCC ATG GTG AAG GGC TCC TTC TTA A</td>
+                </tr>
+                <tr>
+                  <th>pAM-PET_f</th>
+                  <td>TTA AGA AGG AGC CCT TCA CCA TGG CAA ACA ACG ACC TAT T</td>
+                </tr>
+              </table>
+              <table>
+                <tr>
+                  <th>pAM35k_f</th>
+                  <td>CGA ATT GAT CGG CAA GCC AG</td>
+                </tr>
+                <tr>
+                  <th>pAM35k_r</th>
+                  <td>CTG GCT TGC CGA TCA ATT CG</td>
+                </tr>
+              </table>
+              <figcaption>Table 2. Specific primer sequences of final primers used for fragmentation and screening.</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <h3>More Information</h3>
+            <div id="container"></div>
+          </section>
+        </section>
+
+        <section id="petase" class="design-content">
+          <article>
+            <h3>Design Purpose</h3>
+            <p>The purpose of the superPETase vector is to possess the PETase gene and be able to properly function and be expressed by cyanobacteria, our host.</p>
+          </article>
+          <article>
+            <h3>Design Methods</h3>
+            <p> Two genes were chosen from previous research and were modified to be expressed in the desired host.</p>
+            <ol>
+              <li>SuperPETase sequence</li>
+              <li>TorA sequence.</li>
+            </ol>
+          </article>
+          <article>
+            <h3>Super PETase</h3>
+            <p>PETase gene sequence was obtained from a research paper (1). The sequence obtained is as follows:</p>
+            <img src="../../assets/images/codex1.png" alt="" class="codex">
+            <p>In the original paper it was mentioned that the gene was mutated to enhance PETase activity, but the gene sequence did not show this change. We therefore had to make the sequence change. In order to enhance activity I had to be changed to F. We had to look at the primers and look for the I we need. The primers are as follows:</p>
+            <img src="../../assets/images/codex2.png" alt="" class="codex">
+            <p>The only difference between these primers are a V and F and by looking at the codons we can identify where V and F are located and identify the reading frame.</p>
+            <img src="../../assets/images/codex3.png" alt="" class="codex">
+            <p>We then translated these codons to identify the flanking amino acids</p>
+            <img src="../../assets/images/codex4.png" alt="" class="codex">
+            <p>We then look at the original sequence and find this: CENDSIAPVNS</p>
+            <img src="../../assets/images/codex5.png" alt="" class="codex">
+            <p>We have found our I and now we can change the I to F:</p>
+            <img src="../../assets/images/codex6.png" alt="" class="codex">
+            <p>We have now made the IsPETase gene to SuperPETase.</p>
+          </article>
+          <article>
+            <h3>TorA</h3>
+            <p>In order for S. elongatus to be able to express and deliver the SuperPETase gene we need to use an excretion pathway from S. elongatus. Studies have shown that tat pathway in S. elongatus is used in cyanobacteria (2). In order to use this TorA sequence was used. TorA is  a signal peptide that would aide on the excretion of SuperPETase.</p>
+            <p>The TorA sequence is: MANNDLFQASRRRFLAQLGGLTVAGMLGPSLLTPRRATA</p>
+            <p>Which translate to the following codons:</p>
+            <img src="../../assets/images/codex7.png" alt="" class="codex">
+            <p>Both genes were then added to a vector that was created by VectorBuilder. The gene sequence is as follows.</p>
+            <p>In blue you will find the TorA sequence. Followed by the substitution of the start codon to ser highlighted in yellow. The PETase gene is found in red and in the gene you will find the mutation highlighted in orange color and a myc tag in green color</p>
+            <img src="../../assets/images/codex8.png" alt="" class="codex">
+          </article>
+          <section class="citations">
+            <h3>Citations</h3>
+            <ul>
+              <li>1. Ma, Y., Yao, M., Li, B., Ding, M., He, B., Chen, S., Zhou, X., and Yuan, Y. (2018) Enhanced Poly(ethylene terephthalate) Hydrolase Activity by Protein Engineering. Engineering. 4, 888–893</li>
+              <li>2. Spence, E., Sarcina, M., Ray, N., Møller, S. G., Mullineaux, C. W., and Robinson, C. (2003) Membrane-specific targeting of green fluorescent protein by the Tat pathway in the cyanobacterium Synechocystis PCC6803. Molecular Microbiology. 48, 1481–1489</li>
+            </ul>
+          </section>
+        </section>
+
+        <section id="assay" class="design-content">
+          <p>The purpose of the assay team is to design and perform tests verifying  that our enzyme can break down PET (polyethylene terephthalate) plastics in the ocean.</p>
+          <p>Nanoparticles of PET were designed as test subjects, obtained in two ways. Firstly, 2-liter soda bottles were filed and shaved down, providing a “real-world” example of what’s actually in the ocean. Some commercial bottles, however, contain plastics other than PET,  and other modifiers, so clean, commercially PET was purchased as small pellets.</p>
+          <p>To produce PET nanoparticles a dissolution / precipitation/ settling protocol was developed based on  prior work. This entailed dissolving PET in  in 90% TFA 10% water. Contrary to prior studies we found we did not need to mechanically disrupt macroscopic PET to do this.  This was then slowly diluted over >12 hours by dropping into an equal volume of 10% TFA in water. These were then and washed, sonicated and washed again. A fill protocol is provided in the protocol tabs or a quick overview in the image below.</p>
+          <img src="../../assets/images/assay1.jpg" alt="" width="50%">
+          <p>For labeled nanoparticles  Fluorescein was added to the PET dissolved in  90% TFA. It is then trapped in the PET particles as they precipitate when it is diluted into water, creating essentially a solid solution. As the PET is degraded, the fluorescein is released into the solvent. Degradation can then be monitored by release of gluorescncesin ot the aquesous pahse, or by other spectroscopic changes such as the polarization of the fluorescein which is very different in water vs in solid solution in PET due to exterment large viscosity differences.</p>
+          <p>This result dina  heterogeneous preparation for PET on the 10nm to 1mm scale. Larger particles were removed by 90% Fluorescein, a common fluorophore, was then added to the nanoparticles. The fluorescein was dissolved.</p>
+        </section>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <section>
+      <p>Illinois Institute of Technology</p>
+      <p>All rights reserved</p>
+    </section>
+  </footer>
+  <script src="../../site.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.js" integrity="sha256-vZy89JbbMLTO6cMnTZgZKvZ+h4EFdvPFupTQGyiVYZg=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    PDFObject.embed("../../assets/images/primer.pdf", "#container");
+  </script>
+</body>
+
+</html>
