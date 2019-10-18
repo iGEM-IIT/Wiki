@@ -363,6 +363,10 @@ main p {
 
 }
 
+.design-content article {
+  margin-bottom: 2em;
+}
+
 #design-information > section {
   max-height: 0;
   overflow-y: hidden;
@@ -374,4 +378,51 @@ main p {
   transition: all 1s ease-in;
 }
 
+.design-figure {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0;
+}
+
+.design-figure img {
+  width: 70%;
+}
+
+figcaption {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.pdfobject-container {
+   width: 100%;
+   height: 1000px;
+}
+
 /* End of design component cards */
+
+/* Table */
+
+.design-figure-table {
+  display: block;
+  margin: 2em 0;
+}
+
+.design-figure-table table {
+  background-color: #d2f9ff;
+  border-radius: 1em;
+  margin: 0.5em 0;
+}
+
+.design-figure-table th {
+  border: medium solid #f4f4f4;
+  color: #7b76f4;
+  padding: 1em;
+  text-align: left;
+}
+
+.design-figure-table td {
+  border: thin solid #f4f4f4;
+  padding: 1em;
+}
