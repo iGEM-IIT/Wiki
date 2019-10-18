@@ -357,7 +357,7 @@ main p {
 #design-information > section {
   max-height: 0;
   overflow-y: hidden;
-  /* transition: all 1s ease-out; */
+  transition: all 1s ease-out;
 }
 
 #design-information > section.visible {
