@@ -301,6 +301,13 @@ main p {
   width: 60%;
 }
 
+.content-right-container h4 {
+  color: #6295e6;
+  font-family: Ostrich, Calibri, sans-serif;
+  font-size: 2.3em;
+  line-height: 1em;
+}
+
 .codex {
   width: 40vw;
 }
@@ -314,7 +321,7 @@ main p {
 }
 
 .citations h3 {
-  color: #ffb78b;
+  color: #ffb78b !important;
 }
 
 .citations li {
@@ -326,9 +333,10 @@ main p {
 
 /* Design component cards */
 
-#design-main-header {
+#design-page h3 {
   color: #004e76;
   font-size: 2.7em;
+  line-height: 1em;
 }
 
 #design-components-container {
@@ -346,8 +354,9 @@ main p {
   width: 28%;
 }
 
-.component-name {
-
+.design-component .component-name {
+  font-family: Cloud, Calibri, Arial, serif;
+  font-size: 2.5em;
 }
 
 .design-component img {
