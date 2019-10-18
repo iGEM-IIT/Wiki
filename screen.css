@@ -66,25 +66,26 @@ img {
 
 main {
   padding-bottom: 3em;
-}
-
-#home-page {
-  background-image: url("assets/images/bg1.png");
   background-size: 100vw;
   background-position: top;
   background-repeat: repeat;
 }
 
+#home-page {
+  background-image: url("assets/images/bg1.png");
+
+}
+
 #team-page {
-    background-image: url("assets/images/bg2.png");
-    background-size: 100vw;
-    background-position: top;
+  background-image: url("assets/images/bg2.png");
 }
 
 #description-page {
-    background-image: url("assets/images/bg3.png");
-    background-size: 100vw;
-    background-position: top;
+  background-image: url("assets/images/bg3.png");
+}
+
+#design-page {
+  background-image: url("assets/images/bg4.png");
 }
 
 #banner {
