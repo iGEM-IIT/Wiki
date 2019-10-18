@@ -276,6 +276,17 @@ footer section {
 
 /* General content container stylings */
 
+main h3 {
+  color: #6295e6;
+  font-family: Ostrich, Calibri, sans-serif;
+  font-size: 2.5em;
+  line-height: 1.3em;
+}
+
+main p {
+  margin: 1em 0;
+}
+
 .content-container {
   margin: auto;
   width: 60%;
@@ -285,15 +296,9 @@ footer section {
   margin: 2em 0;
 }
 
-.content-container h3 {
-  color: #6295e6;
-  font-family: Ostrich, Calibri, sans-serif;
-  font-size: 2.5em;
-  line-height: 1.3em;
-}
-
-.content-container p {
-  margin: 1em 0;
+.content-right-container {
+  margin-left: 35%;
+  width: 60%;
 }
 
 .codex {
