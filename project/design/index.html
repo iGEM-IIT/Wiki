@@ -48,7 +48,7 @@
       <p>Learn about the science and engineering behind our product on this page! Green Ocean has undergone a few trials-and-errors and you can take a peek at some of the processes we executed on our way to creating the final product.</p>
     </section>
     <div class="content-right-container">
-      <h3 id="design-main-header">Components</h3>
+      <h3>Components</h3>
       <p>Green Ocean has developed multiple designs in the creation of our product. You can click on any of the following components below to learn more about them.</p>
       <section id="design-components-container">
         <article id="primer-button" class="design-component">
@@ -71,6 +71,122 @@
       <section id="design-information">
         <section id="primer" class="design-content">
 
+          <section>
+            <h3>pAM and PET Fragment Primers</h3>
+            <article>
+              <h4>Design Methods</h4>
+              <p>The two plasmids being used for developing this specific cyanobacterium are pAM4788 as the backbone vector and pCS-PET_VB190412 for the superPETase gene. For convenience’s sake, they shall be referred to in this document as pAM and PET, respectively. In order to design these primers, two steps must be taken. The first step is to identify the regions of each plasmid necessary for PCR and Gibson cloning. The second step is to isolate the specific fragments of each plasmid that will be used in the PCR and cloning protocols. </p>
+            </article>
+            <article>
+              <h4>Region Identification</h4>
+              <p>In the PET plasmid, the region to be isolated is that of the designed superPETase gene (shown in yellow in Figure 1).</p>
+              <figure class="design-figure">
+                <img src="../../assets/images/primer1.jpg" alt="">
+                <figcaption>Figure 1. Graphic map of the pCS-PET_VB190412 plasmid identifying featured regions.</figcaption>
+              </figure>
+              <p>In the pAM plasmid, the region to be removed is the GFP gene (shown in green in Figure 2), leaving the rest of the plasmid as the backbone vector. The superPETase gene (yellow) is inserted where the GFP gene (green) was removed.</p>
+              <figure class="design-figure">
+                <img src="../../assets/images/primer2.jpg" alt="">
+                <figcaption>Figure 2. Graphic map of the pAM4788 plasmid identifying featured regions.</figcaption>
+              </figure>
+            </article>
+            <article>
+              <h4>PCR Primer Isolation</h4>
+              <p>The basic requirements for a PCR primer sequence is that n ≥ 18 and that Tm ≥ 55°C, where n is the number of base pairs and Tm is the melting temperature. A forward and reverse primer must be made for each fragment that is desired to be replicated. For the superPETase gene, the primers would be composed of the sequences of base pairs at the beginning and ending of the gene. For the pAM plasmid backbone, the primers would be composed of the sequences of base pairs just before and just after the GFP gene. Running PCR amplification for the pAM backbone consist of >7k base pairs. This is too large to be efficient. To compensate for this, we divided the pAM backbone into a variety of separate fragments and created primers.</p>
+            </article>
+            <article>
+              <h4>Gibson Primer Design</h4>
+              <p>For Gibson primers, fragments of the two different plasmids being joined must be combined into one primer that will overlap regions of the backbone and product vectors. The basic requirements here are that n ≥ 20 and Tm ≥ 50°C. For identification purposes, these primers will be labeled in an A-B_d fashion, where A is the whole fragment from one plasmid, B is the plasmid to which incomplete fragments of A are attached to the other whole fragment, and d is the direction (Figure 3).</p>
+              <figure class="design-figure">
+                <img src="../../assets/images/primer3.jpg" alt="">
+                <figcaption>Figure 3. Schematic description of Gibson primer structure and naming convention.</figcaption>
+              </figure>
+            </article>
+          </section>
+
+          <section>
+            <h3>Internal PETase Primers</h3>
+            <article>
+              <h4>Strategy</h4>
+              <p>We do initial screening with the sequencing primers that flack the gene insertion site  in the vector backbone. Every plasmid backbone has a _f and_r  sequencing primer which is used to sequencing interred genes, and can also be used to PCR the interest up. When screening by PCR we look for a specific size (size of insert plus flanking sequence). However this does not provide specific amplification  due to the gene, and might be misleading if there is an insert of similar size.</p>
+              <p>To confirm OUR gene is inserted, we want a specific primer, which will ONLY amplify our gene of interest. This will be a lot more diagnostic. We can do this by making primers specific to the gene, and using one of these  as the  _f or _r primers in conjunction  with the sequencing _r an d _f primers.</p>
+            </article>
+          </section>
+
+          <section>
+            <h3>Primer Summary</h3>
+            <figure class="design-figure-table">
+              <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Template</th>
+                  <th>Forward Primer</th>
+                  <th>Reverse Primer</th>
+                  <th>Size (bp)</th>
+                </tr>
+                <tr>
+                  <th>PET</th>
+                  <td>pCS_PET</td>
+                  <td>pAM_PET_f</td>
+                  <td>PET_pAM_r</td>
+                  <td>1034</td>
+                </tr>
+                <tr>
+                  <th>Frag A</th>
+                  <td>pAM</td>
+                  <td>pAM_F2</td>
+                  <td>pAM_35k_r</td>
+                  <td>3521</td>
+                </tr>
+                <tr>
+                  <th>Frag B</th>
+                  <td>pAM</td>
+                  <td>pAM_35k_f</td>
+                  <td>pAM_r</td>
+                  <td>3554</td>
+                </tr>
+              </table>
+              <figcaption>Table 1. Shows the 3 fragments used to make pAM_PET</figcaption>
+            </figure>
+            <figure class="design-figure-table">
+              <table>
+                <tr>
+                  <th>pAM_f2</th>
+                  <td>AAGGGTGGGCGCGCCGACCCAGCTTT</td>
+                </tr>
+                <tr>
+                  <th>pAM_r</th>
+                  <td>GGT GAA GGG CTC CTT CTT AAA G</td>
+                </tr>
+              </table>
+              <table>
+                <tr>
+                  <th>PET-pAM_r</th>
+                  <td>AAT AGG TCG TTG TTT GCC ATG GTG AAG GGC TCC TTC TTA A</td>
+                </tr>
+                <tr>
+                  <th>pAM-PET_f</th>
+                  <td>TTA AGA AGG AGC CCT TCA CCA TGG CAA ACA ACG ACC TAT T</td>
+                </tr>
+              </table>
+              <table>
+                <tr>
+                  <th>pAM35k_f</th>
+                  <td>CGA ATT GAT CGG CAA GCC AG</td>
+                </tr>
+                <tr>
+                  <th>pAM35k_r</th>
+                  <td>CTG GCT TGC CGA TCA ATT CG</td>
+                </tr>
+              </table>
+              <figcaption>Table 2. Specific primer sequences of final primers used for fragmentation and screening.</figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <h3>More Information</h3>
+            <div id="container"></div>
+          </section>
         </section>
 
         <section id="petase" class="design-content">
@@ -143,6 +259,10 @@
     </section>
   </footer>
   <script src="../../site.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.js" integrity="sha256-vZy89JbbMLTO6cMnTZgZKvZ+h4EFdvPFupTQGyiVYZg=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    PDFObject.embed("../../assets/images/primer.pdf", "#container");
+  </script>
 </body>
 
 </html>
