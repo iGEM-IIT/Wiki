@@ -448,24 +448,16 @@ ol li {
 
 /* Experiments components */
 
-#experiment-page .page-components-container {
-  /* margin: auto; */
-  /* width: 80%; */
-}
-
 #experiment-page .page-component h4 {
   /* color: #00a179; */
   font-family: Cloud, Calibri, Arial, serif;
   font-size: 2em;
   line-height: 1em;
-  /* text-align: center; */
 }
 
 #experiment-page .page-component {
-  /* align-items: center; */
   display: flex;
   flex-flow: column;
-  /* justify-content: center; */
   margin: 0.5em 0;
   width: 100%;
 }
