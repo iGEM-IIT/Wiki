@@ -84,7 +84,7 @@ main {
   background-image: url("assets/images/bg3.png");
 }
 
-#design-page {
+.std-right-page {
   background-image: url("assets/images/bg4.png");
 }
 
@@ -370,7 +370,7 @@ main p {
 .section-content {
   max-height: 0;
   overflow-y: hidden;
-  transition: all 0.5s ease-out;
+  transition: all 1s ease-out;
 }
 
 .section-content.visible {
@@ -450,22 +450,24 @@ ol li {
 
 #experiment-page .page-components-container {
   /* margin: auto; */
-  width: 80%;
+  /* width: 80%; */
 }
 
 #experiment-page .page-component h4 {
-  color: #00a179;
+  /* color: #00a179; */
   font-family: Cloud, Calibri, Arial, serif;
-  font-size: 1.5em;
+  font-size: 2em;
   line-height: 1em;
-  text-align: center;
+  /* text-align: center; */
 }
 
 #experiment-page .page-component {
-  align-items: center;
+  /* align-items: center; */
   display: flex;
-  justify-content: center;
+  flex-flow: column;
+  /* justify-content: center; */
   margin: 0.5em 0;
+  width: 100%;
 }
 
 /* End of experiments components */
