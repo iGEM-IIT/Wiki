@@ -341,7 +341,7 @@ main p {
 
 .page-components-container {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
   margin-bottom: 2em;
 }
