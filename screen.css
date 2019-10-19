@@ -333,20 +333,20 @@ main p {
 
 /* Design component cards */
 
-#design-page h3 {
+.std-right-page h3 {
   color: #004e76;
   font-size: 2.7em;
   line-height: 1em;
 }
 
-#design-components-container {
+.page-components-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 2em;
 }
 
-.design-component {
+.page-component {
   border: medium solid #7b76f4;
   border-radius: 1em;
   cursor: pointer;
@@ -354,38 +354,38 @@ main p {
   width: 28%;
 }
 
-.design-component .component-name {
+.page-component .component-name {
   font-family: Cloud, Calibri, Arial, serif;
   font-size: 2.5em;
 }
 
-.design-component img {
+.page-component img {
 
 }
 
-.design-content article {
+.section-content article {
   margin-bottom: 2em;
 }
 
-#design-information > section {
+.section-content {
   max-height: 0;
   overflow-y: hidden;
   transition: all 1s ease-out;
 }
 
-#design-information > section.visible {
+.section-content.visible {
   max-height: 5000px;
   transition: all 1s ease-in;
 }
 
-.design-figure {
+.project-figure {
   align-items: center;
   display: flex;
   flex-direction: column;
   margin: 2em 0;
 }
 
-.design-figure img {
+.project-figure img {
   width: 70%;
 }
 

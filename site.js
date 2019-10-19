@@ -30,7 +30,7 @@ assayBtn.addEventListener('click', function(e) {
 
 function closeOthers () {
   var infoContainer = html.querySelector('#design-information');
-  var infoSections = infoContainer.getElementsByClassName('design-content');
+  var infoSections = infoContainer.getElementsByClassName('section-content');
   // console.log(infoSections);
   for (let i = 0; i < infoSections.length; i++) {
     // console.log("section: " + infoSections[i]);
