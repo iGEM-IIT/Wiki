@@ -402,7 +402,7 @@ figcaption {
 
 /* End of design component cards */
 
-/* Table */
+/* Design page table */
 
 .design-figure-table {
   display: block;
@@ -426,3 +426,9 @@ figcaption {
   border: thin solid #f4f4f4;
   padding: 1em;
 }
+
+/* End of design page table */
+
+/* Experiments components */
+
+/* End of experiments components */
