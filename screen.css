@@ -429,6 +429,23 @@ figcaption {
 
 /* End of design page table */
 
+/* Ordered lists */
+
+ol {
+  list-style-type: decimal;
+  margin-left: 1em;
+}
+
+ol [start="a"] {
+  list-style-type: lower-latin;
+}
+
+ol li {
+  line-height: 1.5em !important;
+}
+
+/* End of ordered lists */
+
 /* Experiments components */
 
 /* End of experiments components */
