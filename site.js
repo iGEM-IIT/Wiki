@@ -3,11 +3,8 @@ var html = document.querySelector('html');
 // Removes displayed information before displaying the new one
 
 function closeOthers() {
-  var infoContainer = html.querySelector('.sections-container');
-  var infoSections = infoContainer.getElementsByClassName('section-content');
-  // console.log(infoSections);
+  var infoSections = html.getElementsByClassName('section-content');
   for (let i = 0; i < infoSections.length; i++) {
-    // console.log("section: " + infoSections[i]);
     if (infoSections[i].classList.contains('visible')) {
       infoSections[i].classList.toggle('visible');
     }
@@ -46,7 +43,7 @@ if (document.querySelector('#design-page')) {
 
 } // End of design page
 
-// For the design page
+// For the experiment page
 
 if (document.querySelector('#experiment-page')) {
 
@@ -68,54 +65,63 @@ if (document.querySelector('#experiment-page')) {
     let designContent = html.querySelector('#agar');
     closeOthers();
     designContent.classList.toggle('visible');
+    this.scrollIntoView({behavior: "smooth"});
   });
 
   gelBtn.addEventListener('click', function(e) {
     let designContent = html.querySelector('#gel');
     closeOthers();
     designContent.classList.toggle('visible');
+    this.scrollIntoView({behavior: "smooth"});
   });
 
   petBtn.addEventListener('click', function(e) {
     let designContent = html.querySelector('#pet');
     closeOthers();
     designContent.classList.toggle('visible');
+    this.scrollIntoView({behavior: "smooth"});
   });
 
   gibsonBtn.addEventListener('click', function(e) {
     let designContent = html.querySelector('#gibson');
     closeOthers();
     designContent.classList.toggle('visible');
+    this.scrollIntoView({behavior: "smooth"});
   });
 
   dnaMiniBtn.addEventListener('click', function(e) {
     let designContent = html.querySelector('#dna-mini');
     closeOthers();
     designContent.classList.toggle('visible');
+    this.scrollIntoView({behavior: "smooth"});
   });
 
   dnaHDBtn.addEventListener('click', function(e) {
     let designContent = html.querySelector('#dna-hd');
     closeOthers();
     designContent.classList.toggle('visible');
+    this.scrollIntoView({behavior: "smooth"});
   });
 
   pcrBtn.addEventListener('click', function(e) {
     let designContent = html.querySelector('#pcr');
     closeOthers();
     designContent.classList.toggle('visible');
+    this.scrollIntoView({behavior: "smooth"});
   });
 
   pcrPurifyBtn.addEventListener('click', function(e) {
     let designContent = html.querySelector('#pcr-purify');
     closeOthers();
     designContent.classList.toggle('visible');
+    this.scrollIntoView({behavior: "smooth"});
   });
 
   proteinBtn.addEventListener('click', function(e) {
     let designContent = html.querySelector('#protein-purify');
     closeOthers();
     designContent.classList.toggle('visible');
+    this.scrollIntoView({behavior: "smooth"});
   });
 
 } // End of design page
