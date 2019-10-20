@@ -318,6 +318,7 @@ main p {
 
 .citations {
   font-size: 0.8em;
+  margin-top: 2em;
 }
 
 .citations h3 {
@@ -363,9 +364,9 @@ main p {
 
 }
 
-.section-content article,
+.section-content > article,
 .experiment-article {
-  margin-bottom: 2em;
+  margin-top: 2em;
 }
 
 .section-content {
@@ -436,7 +437,7 @@ figcaption {
 
 ol {
   list-style-type: decimal;
-  margin-left: 2em;
+  margin-left: 1em;
 }
 
 ol [start="a"] {
@@ -445,12 +446,21 @@ ol [start="a"] {
 
 ol li {
   line-height: 1.5em !important;
-  margin: 0.5em 0;
+  margin: 0.5em;
+}
+
+ul.circle {
+  list-style-type: circle;
+  margin-left: 1em;
 }
 
 /* End of ordered lists */
 
 /* Experiments components */
+
+#experiment-page .page-component {
+  padding: 1em;
+}
 
 #experiment-page .page-component h4 {
   /* color: #00a179; */
@@ -464,6 +474,10 @@ ol li {
   flex-flow: column;
   margin: 0.5em 0;
   width: 100%;
+}
+
+.page-component p {
+  margin: 0.5em 0 0 0;
 }
 
 /* End of experiments components */
