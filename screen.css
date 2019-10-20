@@ -467,3 +467,22 @@ ol li {
 }
 
 /* End of experiments components */
+
+/* Experiment overview */
+
+#experiment-overview li {
+  margin: 0.5em 0;
+}
+
+#experiment-overview h4 {
+  font-family: Cloud, Calibri, Arial, serif;
+  font-size: 1.5em;
+  line-height: 1em;
+}
+
+#experiment-overview p {
+  width: 60%;
+  margin: 0.3em 0;
+}
+
+/* End of experiment overview */
