@@ -363,7 +363,8 @@ main p {
 
 }
 
-.section-content article {
+.section-content article,
+.experiment-article {
   margin-bottom: 2em;
 }
 
@@ -433,7 +434,7 @@ figcaption {
 
 ol {
   list-style-type: decimal;
-  margin-left: 1em;
+  margin-left: 2em;
 }
 
 ol [start="a"] {
@@ -442,6 +443,7 @@ ol [start="a"] {
 
 ol li {
   line-height: 1.5em !important;
+  margin: 0.5em 0;
 }
 
 /* End of ordered lists */
