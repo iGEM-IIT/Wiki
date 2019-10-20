@@ -84,7 +84,7 @@ main {
   background-image: url("assets/images/bg3.png");
 }
 
-#design-page {
+.std-right-page {
   background-image: url("assets/images/bg4.png");
 }
 
@@ -297,7 +297,7 @@ main p {
 }
 
 .content-right-container {
-  margin-left: 35%;
+  margin: 2em 0 0 35%;
   width: 60%;
 }
 
@@ -318,6 +318,7 @@ main p {
 
 .citations {
   font-size: 0.8em;
+  margin-top: 2em;
 }
 
 .citations h3 {
@@ -333,20 +334,20 @@ main p {
 
 /* Design component cards */
 
-#design-page h3 {
+.std-right-page h3 {
   color: #004e76;
   font-size: 2.7em;
   line-height: 1em;
 }
 
-#design-components-container {
+.page-components-container {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
   margin-bottom: 2em;
 }
 
-.design-component {
+.page-component {
   border: medium solid #7b76f4;
   border-radius: 1em;
   cursor: pointer;
@@ -354,38 +355,42 @@ main p {
   width: 28%;
 }
 
-.design-component .component-name {
+.page-component .component-name {
   font-family: Cloud, Calibri, Arial, serif;
   font-size: 2.5em;
 }
 
-.design-component img {
+.page-component img {
 
 }
 
-.design-content article {
-  margin-bottom: 2em;
+.section-content > article,
+.experiment-article {
+  margin-top: 2em;
 }
 
-#design-information > section {
+.section-content {
   max-height: 0;
   overflow-y: hidden;
   transition: all 1s ease-out;
 }
 
-#design-information > section.visible {
+.section-content.visible {
+  cursor: auto;
   max-height: 5000px;
   transition: all 1s ease-in;
 }
 
-.design-figure {
+.project-figure {
   align-items: center;
   display: flex;
   flex-direction: column;
   margin: 2em 0;
 }
 
-.design-figure img {
+.project-figure img {
+  max-height: 50vh;
+  object-fit: scale-down;
   width: 70%;
 }
 
@@ -402,7 +407,7 @@ figcaption {
 
 /* End of design component cards */
 
-/* Table */
+/* Design page table */
 
 .design-figure-table {
   display: block;
@@ -426,3 +431,89 @@ figcaption {
   border: thin solid #f4f4f4;
   padding: 1em;
 }
+
+/* End of design page table */
+
+/* Ordered lists */
+
+ol {
+  list-style-type: decimal;
+  margin-left: 1em;
+}
+
+ol [start="a"] {
+  list-style-type: lower-latin;
+}
+
+ol li {
+  line-height: 1.5em !important;
+  margin: 0.5em;
+}
+
+ul.circle {
+  list-style-type: circle;
+  margin-left: 1em;
+}
+
+/* End of ordered lists */
+
+/* Experiments components */
+
+#experiment-page .page-component {
+  padding: 1em;
+}
+
+#experiment-page .page-component h4 {
+  /* color: #00a179; */
+  font-family: Cloud, Calibri, Arial, serif;
+  font-size: 2em;
+  line-height: 1em;
+}
+
+#experiment-page .page-component {
+  display: flex;
+  flex-flow: column;
+  margin: 0.5em 0;
+  width: 100%;
+}
+
+.page-component p {
+  margin: 0.5em 0 0 0;
+}
+
+/* End of experiments components */
+
+/* Experiment overview */
+
+#experiment-overview li {
+  margin: 0.5em 0;
+}
+
+#experiment-overview h4 {
+  font-family: Cloud, Calibri, Arial, serif;
+  font-size: 1.5em;
+  line-height: 1em;
+}
+
+#experiment-overview p {
+  width: 60%;
+  margin: 0.3em 0;
+}
+
+/* End of experiment overview */
+
+/* Experiment section-content */
+
+.section-content h5 {
+  color: #00b98a;
+  font-family: Cloud, Calibri, Arial, serif;
+  font-size: 1.5em;
+  line-height: 1em;
+}
+
+.section-content .citations h3 {
+  font-family: Cloud, Calibri, Arial, serif;
+  font-size: 1.5em;
+}
+
+/* End of experiment section-content */

@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>iGEM IIT Chicago</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+  <link rel="stylesheet" href="../../screen.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" />
+</head>
+<body>
+  <!--contains header title and navigation bar-->
+  <header class="header">
+    <figure id="logo">
+      <img src="../../assets/images/logo-named2.png" alt="Green Ocean">
+    </figure>
+    <!-- <h1 class="title">Green Ocean</h1> -->
+    <nav class="menu">
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Project</a>
+          <ul class="submenu">
+            <li><a href="#">Description</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Experiments</a></li>
+            <li><a href="#">Notebook</a></li>
+            <li><a href="#">Contribution</a></li>
+            <li><a href="#">Results</a></li>
+            <li><a href="#">Attributions</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Parts</a></li>
+        <li><a href="#">Awards</a>
+          <ul class="submenu">
+            <li><a href="#">Entrepreneurship</a></li>
+            <li><a href="#">Plant Synthetic Biology</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Safety</a></li>
+        <li><a href="#">Human Practices</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="experiment-page" class="std-right-page">
+    <section class="page-header">
+      <h2>Experiment</h2>
+      <p>There were many important experiments that were conducted in order for this project to be developed. In this page you will find  an explanation of the experiments that were conducted and what was the purpose behind them. Additionally our protocols have a detailed explanation of how each experiment was conducted and our Notebook contains results that were yield from these experiments.</p>
+    </section>
+    <div class="content-right-container">
+      <!-- Experiment Overview -->
+      <article id="experiment-overview" class="experiment-article">
+        <h3>Overview of Experiments</h3>
+        <ul>
+          <li>
+            <h4>DNA Mini Prep</h4>
+            <p>This is used to harvest the genetic information of interest from cultured cells. It yields template DNA which can be used for PCR.</p>
+          </li>
+          <li>
+            <h4>PCR Amplification</h4>
+            <p>The goal of amplification PCR is to make many copies of our fragments of interest using designed primers.</p>
+          </li>
+          <li>
+            <h4>PCR Screening</h4>
+            <p>The goal of screening PCR is to yield fragments of known sizes which will indicate the correct fragment </p>
+          </li>
+          <li>
+            <h4>Gel Electropheresis</h4>
+            <p>This is a procedure used to separate DNA fragments based on size. It is used to identify fragments. </p>
+          </li>
+          <li>
+            <h4>PCR Purification</h4>
+            <p>PCR fragments need to be purified, this ensures that it is just DNA material is present and prepares it for gibson, screening, and sequencing.</p>
+          </li>
+          <li>
+            <h4>Gibson Assembly</h4>
+            <p>A procedure which allows for the ligation of isolated fragments into a complete plasmid.</p>
+          </li>
+          <li>
+            <h4>Transformation</h4>
+            <p>This is used to uptake the designed plasmid into a TURBO E. Coli cells which includes the F’ plasmid</p>
+          </li>
+          <li>
+            <h4>Fluorescent Nanoparticle Development</h4>
+            <p>This is a procedure used to create the nanoparticles which will be used to test PETase in E. Coli and superPETase in S.e.</p>
+          </li>
+          <li>
+            <h4>Protein Purification</h4>
+            <p>This is a procedure that allows for PETase in E. Coli to be cultured and used to degrade and test the nanoparticles </p>
+          </li>
+        </ul>
+      </article>
+      <!-- PCR -->
+      <article class="experiment-article">
+        <h3>What is PCR?</h3>
+        <p>PCR is an in vitro technique that amplifies a fragment of DNA. With many copies of a targeted sequence, the DNA is able to be processed for many applications, such as: sequencing, running gel electrophoresis, or cloning.</p>
+        <p>To run a PCR a few things are needed:</p>
+        <ol>
+          <li>Template DNA, this is the fragment of DNA in interest. It can be prepared with a mini prep and further modification within the procedure.</li>
+          <li>Forward and reverse primers, these provide a starting point for DNA polymerase to attach. The primers are designed in a way to capture the entire region of the target DNA. There will be a primer for the beginning of the sequence and a primer for the ending of the sequence, refer to these as forward and reverse, and they will bind to their complementary pairs on opposite strands of the template DNA</li>
+          <li>DNA Polymerase, this is a heat stable enzyme that extends the primer by adding the complementary nucleotides to the template strand it follows. It needs to be a heat stable because it needs to work after being heated up to nearly 100 °C. The common heat-stable polymerase used in PCR is the taq polymerase, which comes from an organism that lives in hot springs and thermal vents. (For our IPRO we are using Q5 Polymerase. It has a much lower error rate than taq)</li>
+          <li>dNTP, these are the nucleotides. You can’t build a new strand of DNA without nucleotides. Because this is not within an organism that provides them, they need to be added to the reaction</li>
+          <li>Buffer solution, this provides an optimal conditions for polymerase activity</li>
+          <li>Water, to prevent DNA degradation</li>
+        </ol>
+        <p>PCR is ran through a thermocycler. This instrument follows 3 basic steps:</p>
+        <ol>
+          <li>Denaturation of template DNA: The block with the PCR tubes is heated up to 96 °C which will cause the template DNA to denature, the single double stranded DNA will become two single stranded DNA.</li>
+          <li>Annealing of primers to template DNA: The PCR block is cooled to 50-65 °C which promotes the binding of the primers to their complementary sequences on the template’s single stranded DNA.</li>
+          <li>Extension: The PCR block is heated up again, this time to 72 °C. This allows the polymerase to bind to the free 3’ end of the primer and extend, making a new double stranded DNA fragment</li>
+        </ol>
+        <p>This processes is repeated 25-35x doubling the amount of DNA in the test tube every cycle.</p>
+      </article>
+      <!-- Gel Electropheresis -->
+      <article class="experiment-article">
+        <h3>What is Gel Electrophoresis?</h3>
+        <p>This is the technique of separating charged molecules by their size using a current. As the current passes through, the positively charged end pulls the negatively charged DNA. The further the fragment of DNA gets pulled, the shorter it is. All the DNA has the same charge, so mass is the differentiating factor that allows for the separation. The smaller the mass the shorter the segment of DNA.</p>
+        <p>This is an important part of our lab work, as if the gel runs correctly we’ve done our PCR correctly with the primers that work! If our gel runs incorrectly, retry with controls to evaluate  your technique. If it's not your technique, different primers may need to be chosen and the PCR should be redone.</p>
+        <p>How do you tell if your gel actually WAS successful? The first sign of success is if you see bands streaking down the lane, UV light will illuminate these bands. You can tell the length of each band by the incorporation of the DNA ladder, a standard solution that contains known band lengths for comparing the DNA bands you are investigating. Once you’ve compared your bands to the ladder’s, you would go into a program such as SerialCloner, or of the sort, to see where the primers you used attached the DNA and the view the length of each fragment. If the two observed/recorded length’s match, that off the DNA ladder and the program, you’ve successfully ran a PCR.</p>
+        <p>Whats next after a gel tells you if your PCR was successful? Amplification! Create many copies in preparation for Gibson assembly.</p>
+      </article>
+      <!-- Gibson Assemply -->
+      <article class="experiment-article">
+        <h3>Gibson Assembly</h3>
+        <p>Gibson assembly is a molecular cloning method that allows the joining of multiple DNA fragments in one reaction.</p>
+        <p>There are a few requirements for the Gibson assembly to be successful:</p>
+        <ol>
+          <li>DNA fragments should be of a specific size, usually no less than 20 bp and no more than 40 base pairs. In our project, these fragments were created by PCR.
+            <figure class="project-figure">
+              <img src="../../assets/images/primer3.jpg" alt="Gibson Assembly">
+              <figcaption>Figure 1. Schematic diagram of Gibson primer construction</figcaption>
+            </figure>
+          </li>
+          <li>The fragments then have to be incubated with an enzyme mix, which is composed of three  enzymes, Exonuclease,polymerase and DNA ligase.  The function of the exonuclease is to chew back the 5’ end of the fragment which allows the reaction to occur in one single process. The single stranded regions of adjacent DNA fragments can anneal. The DNApolymerase fills in the gaps between the fragments and finally the DNA ligase removes the nicks in the DNAand joins the DNA adjacent segments.  This solution is incubated at 50C for 1 -2 hours </li>
+        </ol>
+      </article>
+      <!-- Transformation -->
+      <article class="experiment-article">
+        <h3>Transformation</h3>
+        <p>Transformation is the process in which foreign DNA is introduced into the cell. Because our project goal is to introduce this sequence into cyanobacteria, we first have to transformed into E.coli cells, which would also allow for our plasmid to replicate.</p>
+        <p>When the transformation process is done, it allows the pores of the cell membranes to let plasmid DNA through and into the cell. Following transformation, the whole mixture was inoculated onto a streak plate including streptomycin. and incubated overnight. There were 12 successful colonies.</p>
+      </article>
+      <!-- Plasmid DNA Prep -->
+      <article class="experiment-article">
+        <h3>Plasmid DNA Mini Prep</h3>
+        <h4>Brief Overview</h4>
+        <p>The whole point of a mini prep is to isolate plasmid DNA from a bacterial cell. This process is fast and efficient making it a useful tool in many laboratories. </p>
+        <p>A mini prep is also known as an alkaline lyse. This is derived from the use of an alkaline solvent that lyses the cell membranes.</p>
+        <p>Broken down into its basic steps, a mini prep consists of a disruption in the cell structure to make it lyse and the separation of chromosomal DNA, plasmid DNA, cell debris and insoluble material.</p>
+        <h4>Basic Theory</h4>
+        <p>By adding Solution #1, EDTA will remove cations and destabilize the cell membrane and glucose will maintain osmolarity and will prevent the cell from bursting.</p>
+        <p>Solution #2 is composed of SDS, a detergent used in various soaps, shampoos and toothpastes, and NaOH, a strong base; these are where the terminology “alkaline lysis” comes from. The SDS will poke holes into the cell membranes. The sodium hydroxide loosens the cell wall and releases the plasmids and DNA fragments . All the chromosomal DNA will be denatured and linear at this point. However, it is due to the plasmids configuration constraints that they remain circular, but still denatured.</p>
+        <p>The addition of Solution #3, made up of potassium acetate, allows for the renaturing of circular DNA and ridding of “garbage.” The lowering of pH neutralizes the alkalinity of Solution #2, which causes the chromosomal DNA to become insoluble and precipitate out. The KAc will react with the SDS from Solution #2 to from KSD which is insoluble and precipitates out of the plasmid DNA.</p>
+        <p>At this point it is necessary centrifuge and collect the supernatant which contains the plasmids. Everything else (chromosomal DNA, proteins, cellular components) will be in the pellet.</p>
+        <p>Adding cold isopropanol and salt to the supernatant just collected which will mask the negatively charge of the plasmid DNA fragments allowing it to precipitate out into the pellet. The pellet containing plasmid DNA can be retrieved after centrifugation.</p>
+      </article>
+      <!-- Assay -->
+      <article class="experiment-article">
+        <h3>Assay</h3>
+        <p>In order to test the cyanobacteria for extracellular production of PETase, a unique method of assaying was developed. This entails determination of the size of the nanoparticles of PET. These particles were labeled with fluorescein. The breakdown of PET was quantified through fluorimetry.</p>
+        <figure class="project-figure">
+          <img src="../../assets/images/assay1.jpg" alt="Assay Procedure">
+          <figcaption>Figure 2. Diagram of assay procedure</figcaption>
+        </figure>
+      </article>
+      <!--  Fluorescent Microscope -->
+      <article class="experiment-article">
+        <h3>Fluorescent Microscope</h3>
+        <p>Fluorescence of label particles was observed by both microscopy and spectroscopy. Particles were clearly fluorescent when viewed under a fluorescence microscope, left, figure 3. On the right, figure 3, the fluorescence spectra of fluorescein embedded in PET nanoparticles (blue upper) is comparable in the emission side to free aqueous fluorescein (green, lower), with maximum near 520 nm, but the excitation spectra is significantly blue shifted, with a maximum near 440 nm, compared to a typical 494 nm excitation maximum for aqueous fluorescein. This shift can potentially be used to monitor release of fluorescein as the particles are degraded.</p>
+        <figure class="project-figure">
+          <img src="../../assets/images/exp1.png" alt="Fluorescent image">
+          <figcaption>Figure 3. Images of particles</figcaption>
+        </figure>
+      </article>
+
+      <!-- Protocols -->
+      <section>
+        <h3>Protocols</h3>
+        <p>Here are the processes involved in the creation of our product.</p>
+        <p>Click the protocol you'd like to see in full view.</p>
+        <div class="page-components-container">
+          <article id="agar-button" class="page-component">
+            <h4>Agar Plateing</h4>
+
+            <!-- NOTE: THIS IS THE EXAMPLE -->
+            <section id="agar" class="section-content">
+              <!-- NOTE: every new line or paragraph is a P. Do not use breaks -->
+              <p>Note: may have a distinguishable smell</p>
+              <p>Before going through the procedure, make sure you have made and autoclaved the (correct) liquid agar for your culture (depends on plasmid, as well as bacteria)</p>
+              <!-- NOTE: enclose each subsection with an ARTICLE -->
+              <article>
+                <!-- NOTE: use H4 as section title -->
+                <h5>Making Liquid Media</h5>
+                <ol>
+                  <li>Obtain a glass bottle in the green cabinet (on the west side of lab)</li>
+                  <!-- NOTE: example of nested list -->
+                  <li>4g of LB media and 4g of agar
+                    <!-- NOTE: remember to add start="a" for nested lists. -->
+                    <!-- if the doc uses small roman numerals, put "i" instead -->
+                    <ul class="circle">
+                      <li>should be 2% of the media for each</li>
+                      <li>both found in chemical cabinet on east side of lab room</li>
+                    </ul>
+                  </li>
+                  <li>Add 200mL of H2O
+                    <ul class="circle">
+                      <li>each bottle has a piece of tap that read “LB200” to the top of the tap is how much water to add, but measure it out before</li>
+                    </ul>
+                  </li>
+                  <li>Tap the bottom of the bottle to mix solids into solution</li>
+                  <li>Put a new piece of autoclave tap on it</li>
+                  <li>Run Liq1 program in autoclave</li>
+                  <li>Let cool</li>
+                  <li>Add appropriate antibiotic at a .001:1 ratio of antibiotic to LB media
+                    <ul class="circle">
+                      <li>For our purposes (pAM_PET), we will be using streptinomycin or spectinomycin</li>
+                      <li>200uL of antibiotic : 200 mL of LB</li>
+                    </ul>
+                  </li>
+                </ol>
+              </article>
+              <!-- NOTE: this is another subsection/ARTICLE -->
+              <article>
+                <h5>Pouring Plates</h5>
+                <p>Be sure to be wearing gloves and try to not have mouth open when pouring plates. Sterility is key!</p>
+                <ol>
+                  <li>Clean workbench with alcohol</li>
+                  <li>To the warm/cooling agar, add desirable antibiotics
+                    <ul class="circle">
+                      <li>Can’t autoclave antibiotics, they will become inactive</li>
+                    </ul>
+                  </li>
+                  <li>Lay out sterile plates</li>
+                  <li>Quickly! Take agar, uncover one plate, pour agar, close plate cover, repeat for all plates
+                    <ul class="circle">
+                      <li>Only need a small film of agar on the plate</li>
+                      <li>Pour reasonable amount and after you’ve closed cover GENTLY and SWIFTLY swirl the plate to make sure it's completely covered in agar</li>
+                    </ul>
+                  </li>
+                  <li>Leave the agar to cool and settle
+                    <ul class="circle">
+                      <li>Because you poured warm agar, condensation will begin to form on the cover to the plate</li>
+                    </ul>
+                  </li>
+                  <li>Rinse out bottle containing liquid agar right after usage</li>
+                  <li>Once agar has solidified flip plate over to be upside-down (the preferred storage state of an agar plate) and label the type of agar used</li>
+                  <li>Leave plates out overnight (or similar duration) to rid the plate of condensation</li>
+                </ol>
+              </article>
+            </section>
+
+          </article>
+
+          <article id="gel-button" class="page-component">
+            <h4>Agarose Gel Electrophoresis Procedure</h4>
+            <p>This is a procedure used to separate DNA fragments based on size. It is used to identify fragments.</p>
+
+            <section id="gel" class="section-content">
+              <!-- Agar Gel Recipe -->
+              <article>
+                <h5>Agar Gel Recipe</h5>
+                <p>Generally, a 1% agarose gel is used. You may use higher (up to 2%) for very small pieces < 1000 bp or lower ( down to 0.5% for >10kbp) agarose as needed.</p>
+                <ol>
+                  <li>There is a 250mL glass bottle next to the microwave designated specifically for LB. Add the following to the bottle:
+                    <ol start="a">
+                      <li>Add 0.75g of agarose (be sure to use agarose which is white, not agar which is brown). Or more or less for other than 1%. The exact amount is not as crucial as gels are always run against standard sized DNA ladders.</li>
+                      <li>7.5g of 10x TBE Buffer by weight.</li>
+                      <li>Make up to 75 with water H2O. note that this means add 75-7.5 =67.5g water. Simply do not tare the balance after adding 10xTBE, when it should read 7.5g.</li>
+                    </ol>
+                  </li>
+                  <li>Nuke in the microwave for 1 minute at a time, making sure that all the solid is dissolved. BE CAREFUL when removing it from the microwave as it may be superheated and overboil, burning your fingers! Nudge gently before picking up.</li>
+                  <li>Hold up to light to view dissolution of agar particles. These turn clear and translucent above 50C, but will not immediately dissolve - so that are hard to see. if  you do not full melt them to dissolve, there will be localized high and low concentration region in your gel, and resolution will be poor - the bands will be blurry. It generally take ~5 minutes to fully dissolve a 1% agar solution, during which you alternate gentle swirling  with 10-15 seconds heating in the microwave to maintain T>90C.</li>
+                </ol>
+              </article>
+              <!-- Gel Electrophoresis Procedure -->
+              <article>
+                <h5>Gel Electrophoresis Procedure</h5>
+                <ol>
+                  <li>Tape the two open sides of the gel plate to fabricate an enclosed space
+                    <ul class="circle">
+                      <li>Run your thumb nail alone edges to ensure it’s sealed tightly</li>
+                    </ul>
+                  </li>
+                  <li>Pour just enough of the cooling, liquid LB into the gel plate to caulk the edges</li>
+                  <li>Briefly (5-10 min, while you are dissolving solution point 3 above) cool gel plate (with the “caulk”) in fridge</li>
+                  <li>Add 10mg/ml ethidium bromide in the amount of 3µL / 75 ml agarose solution (*ALWAYS WEAR GLOVES WHEN HANDLING ETHIDIUM BROMIDE*)</li>
+                  <li>Once the bead from #2 above is cool, pPour the rest of agarose solution into the gel tray
+                    <ol start="a">
+                      <li>Place combs into gel (usually 2 combs, one at the edge and one in the middle: as shown in the image to the right)</li>
+                      <li>Cool in fridge until it sets, at which time ti will become uniformly cloudy. Once cool, untape and take out combs</li>
+                    </ol>
+                  </li>
+                  <li>Remove tape and place gel plate + gel into the holder where you’ll barely cover the gel with 1x TBE. (TBE with 40ul 10mg/ml EtBr)</li>
+                  <li>Onto a parafilm strip
+                    <ol>
+                      <li>Transfer 1µL of loading dye onto parafilm</li>
+                      <li>Add 3µL of PCR’d DNA and pipet up and down into the loading dye</li>
+                    </ol>
+                  </li>
+                  <li>Add DNA + dye into wells on gel
+                    <ul class="circle">
+                      <li>Make sure you go into the well and don’t dispense into the buffer solution that’s running over the gel</li>
+                    </ul>
+                  </li>
+                  <li>Add a DNA ladder to a well
+                    <ol start="a">
+                    <li>1kb</li>
+                    <li>100</li>
+                    </ol>
+                  </li>
+                  <li>Attach the leads to the holder
+                    <ol start="a">
+                      <li>Put the neg charged (black) on the side of the holder that is designated black</li>
+                      <ul class="circle">
+                        <li>Make sure the wells with the DNA is located on that side of the holder</li>
+                      </ul>
+                      <li>Put the positive charged (red) on the side of the holder that is designated red</li>
+                    </ol>
+                  </li>
+                  <li>Set your voltage, via adjustment knob, till it reads 180V</li>
+                  <li>Let it run, but don’t let the DNA run off the gel</li>
+                  <li>Detach leads, take out gel and go to UV light to read</li>
+                </ol>
+              </article>
+              <!-- Capturing Gel with Gel Doc Camera -->
+              <article>
+                <h5>Capturing Gel with Gel Doc Camera</h5>
+                <ol>
+                  <li>Open Molecular Analyst on the really old computer.</li>
+                  <li>Take the gel off of the plastic and center it on the UV light in the camera box, zoom in so the gel takes up the whole image and focus the image.</li>
+                  <li>Close the door and turn on the UV light.</li>
+                  <li>To see the image: File > acquire > gel doc</li>
+                  <li>To change the “brightness” of the image: Left hand side of imaging window, find “integrate” and use the drop down till you have a clear image of gel</li>
+                  <li>When satisfied with the image, press Capture.</li>
+                  <li>To save: file > export > users > IPRO and save in the format of date/brief description and manually add “.tif” at the end of the file name</li>
+                </ol>
+              </article>
+              <section class="citations">
+                <h3>Helpful Links</h3>
+                <ul>
+                  <li>https://www.khanacademy.org/science/biology/biotech-dna-technology/dna-sequencing-pcr-electrophoresis/a/gel-electrophoresis</li>
+                </ul>
+              </section>
+            </section>
+
+          </article>
+
+          <article id="pet-button" class="page-component">
+            <h4>Fluorescent PET Nanoparticle Procedure</h4>
+            <p>This is a procedure used to create the nanoparticles which will be used to test PETase in E. Coli and superPETase in S.e.</p>
+
+            <section id="pet" class="section-content">
+              <article>
+                <h5>Procedure</h5>
+                <ol>
+                  <li>Dissolve 1 g of PET in 10 mL 90% v/v TFA and let sit overnight under constant stirring
+                    <ul class="circle">
+                      <li>NOTE: If the FischerSci PET granules were used an additional centrifugation step is needed as the granules contain 30 % glass reinforcer. After dissolution in 90 % TFA, separate the 10 mL solution into two glass centrifuge vials and centrifuge for 5 min at 2500 rpm. Glass particles should precipitate and the solution can be poured back into the flask as to not allow any of the glass particles to fall back in</li>
+                    </ul>
+                  </li>
+                  <li>After letting sit overnight, add 100 μL of Fluorescein soln. (~ 0.05 g fluorescein dissolved in 1 mL dimethylsulfoxide) to the 10 mL solution</li>
+                  <li>Cover the solution with foil to protect fluorescence</li>
+                  <li>Setup dropper with 10 mL 20% v/v TFA and add dropwise to 90% TFA solution while the solution is still under constant stirring and let sit overnight</li>
+                  <li>Split the solution (now 20 mL of ~55 % TFA) into two plastic 50 mL centrifuge vials and dilute each vial to 50 mL with water</li>
+                  <li>Centrifuge for 0.5 hr at 5000 rpm and discharge supernatant</li>
+                  <li>Resuspend particles in 100 mL of 0.5 % SDS solution. (Add 25 mL water and 25 mL 1.0 % SDS to each vial and stir to resuspend particles. Combine both vials into a single beaker.)</li>
+                  <li>Sonicate the 0.5 % SDS solution at 35% for 0.5 hr. Beaker should be surrounded by ice water and the top should be covered in parafilm with the tip of the sonicator stabbed through the film.</li>
+                  <li>After sonication, place the solution in a graduated cylinder to allow larger particles to sink to the bottom of the solution. The graduated cylinder should be covered with foil to protect fluorescence.</li>
+                </ol>
+              </article>
+            </section>
+
+          </article>
+
+          <article id="gibson-button" class="page-component">
+            <h4>Gibson and Transformation</h4>
+            <p>A PCR procedure which allows for the ligation of isolated fragments into a complete plasmid. </p>
+
+            <section id="gibson" class="section-content">
+              <!-- Gibson -->
+              <article>
+                <h5>Gibson</h5>
+                <ol>
+                  <li>Determine the amount required
+                    <ul class="circle">
+                      <li>Open the excel file in google drive which called Gibson setup template blank</li>
+                      <li>Copy to create a new one, enter the data (size and A260 value) into the new one, this will give you the amount of each fragment to use</li>
+                    </ul>
+                  </li>
+                  <li>Into AUTOCLAVED pcr tubes, add the amount of primers you need
+                    <ul class="circle">
+                      <li>Ex. I determined I need 1.3ul primer A, 1.3ul primer B and 0.4ul PET. Add these to tube</li>
+                    </ul>
+                  </li>
+                  <li>Set up another tube and add solution positive control, the amount is same as the pAM_PET tube
+                    <ul class="circle">
+                      <li>Ex. We added 3ul of pAM_PET fragments, ,so we add 3ul positive control.</li>
+                    </ul>
+                  </li>
+                  <li>Then we add solution master mix (found in freezer, ipro box) into both tubes
+                    <ul class="circle">
+                      <li>Ex. Make it a 6ul reaction, so add 3 ul of MM</li>
+                    </ul>
+                  </li>
+                  <li>Run the program “Gibson twohour”</li>
+                </ol>
+              </article>
+              <!-- Transformation -->
+              <article>
+                <h5>Transformation</h5>
+                <ol>
+                  <li>After the program is over, transfer half of the reaction tube contents (all of them is the best actually!!) inside competent C2987 cells (found in an orange box in the freezer room, last freezer on the south wall)
+                    <ul class="circle">
+                      <li>Don’t mix the control and the pAM_PET tube up! (Label each tube with corresponding components)</li>
+                      <li>You should get two tubes here, one is pet tube with C2987,another is control tube with C2987</li>
+                    </ul>
+                  </li>
+                  <li>Put them on ice for 45-90 (60) minutes
+                    <ul class="circle">
+                      <li>Too long or too short time will cause failure</li>
+                    </ul>
+                  </li>
+                  <li>Heat shock cells in water @ 42 (41.5-42.5) degree centigrade.</li>
+                  <li>Put both of the tubes into the water for 60 seconds.</li>
+                  <li>Then put them back on ice 1 min</li>
+                  <li>Add 1 mL the nutrient solution(SOC-SOB) into the two tubes.</li>
+                  <li>Put both the tubes into the incubator @ 37 degree for 45-60 min (doesn’t need to shake)</li>
+                  <li>Centrifuge them. Then decant the supernatant.</li>
+                  <li>Use remaining supernatant (should only be a small amout) to resuspend the transformed bacteria.</li>
+                  <li>Properly plate bacteria on proper plate with proper antibiotics (SM or SP for pAM vectors, A for control) and incubate</li>
+                  <li>Replica plate them, after growth the following day</li>
+                </ol>
+              </article>
+            </section>
+
+          </article>
+
+          <article id="dna-mini-button" class="page-component">
+            <h4>DNA Mini Prep</h4>
+            <p>This is used to harvest the genetic information of interest from cultured cells. It yields template DNA which can be used for PCR. </p>
+
+            <section id="dna-mini" class="section-content">
+              <article>
+                <h5>Procedure</h5>
+                <ol>
+                  <li>Retrieve centrifuged cultures and pipet 200 μL of Solution #1 (“Happy solution” → glucose, EDTA) (fridge) into the tube with the culture
+                    <ul class="circle">
+                      <li>Use the pipet to mix the solution 1 + culture a few times to ensure the bacteria are resuspended in solution</li>
+                    </ul>
+                  </li>
+                  <li>Add 200 μL of solution #2 (SDS + NaOH)(on top of lab bench) into a labeled microcentrifuge tube</li>
+                  <li>Transfer (all) bacteria suspended in solution 1 into microcentrifuge tubes with solution 2
+                    <ol start="a">
+                      <li>Invert to mix bacteria with solution 2</li>
+                      <li>Let sit a few minutes (~5min)</li>
+                    </ol>
+                  </li>
+                  <li>Pipet 400 μL of solution #3 (Potassium Acetate buffer)(fridge)
+                    <ul class="circle">
+                      <li>Solution 3 is kept cold to aid in precipitation</li>
+                      <li>After you add solution 3, you should see a precipitate</li>
+                    </ul>
+                  </li>
+                  <li>Centrifuge for ~5 minutes in centrifuge in fridge</li>
+                  <li>Extract supernatant and transfer to another microcentrifuge tube
+                    <ul class="circle">
+                      <li>Be sure to leave the pellet behind, even if this means you leave some of the liquid supernatant behind</li>
+                    </ul>
+                  </li>
+                  <li>Add 500 μL of ice cold isopropanol to microcentrifuge tube with the supernatant</li>
+                  <li>Centrifuge for ~10 minutes</li>
+                  <li>Take tubes out of centrifuge and pour out supernatant
+                    <ul class="circle">
+                      <li>Should have a small pellet at bottom of microcentrifuge tube (example to the right)</li>
+                      <li>Flip onto paper towel to allow for further draining</li>
+                    </ul class="circle">
+                  </li>
+                  <li>Rinse pellet with alcohol (cold 70% ethanol) (freezer)
+                    <ul class="circle">
+                      <li>Dump alcohol out and flip onto paper towel for drainage</li>
+                    </ul>
+                  </li>
+                  <li>Put into incubator to dry for ~ 10 minutes</li>
+                  <li>Put dried isolated plasmids into cooler for storage</li>
+                </ol>
+              </article>
+              <section class="citations">
+                <h3>Helpful Links</h3>
+                <ul>
+                  <li>https://www.uni-hohenheim.de/fileadmin/einrichtungen/pflanzenphysiologie/Protokolle/II.DNA/DNA_plasmid_minireps_hintergrundinfo_en.pdf</li>
+                  <li>https://www.dsmz.de/fileadmin/Bereiche/Microbiology/Dateien/Kultivierungshinweise/Plasmid_Isolation_from_Bacteria.pdf</li>
+                </ul>
+              </section>
+            </section>
+
+          </article>
+
+          <article id="dna-hd-button" class="page-component">
+            <h4>High Quality DNA Prep</h4>
+
+            <section id="dna-hd" class="section-content">
+              <!-- HQ DNA prep -->
+              <article>
+                <h5>Preparation (used for plasmid purification)</h5>
+                <ol>
+                  <li>Using a sterile loop (follow aseptic technique), inoculate a colony of E. coli to >=3 mL of nutrient broth LB+antibiotic
+                  <li>Place the tube into a shaker machine at 37 °C overnight.</li>
+                  <li>After culturing, centrifuge (big centrifuge, don’t forget to sign the sheet) the tube at 5000 RPM for 5 minutes. Make sure the centrifuge is balanced and not shaking before leaving the machine.</li>
+                  <li>Take the tube out of the centrifuge and dump out the supernatant.</li>
+                </ol>
+              </article>
+              <!-- ZR Plasmid Miniprep -->
+              <article>
+                <h5>ZR Plasmid Miniprep</h5>
+                <ol>
+                  <li>Add 200 µL of P2 solution (color? blue?) to 3 sterile tubes (600 µL total, partitioned into 3 tubes)</li>
+                  <li>Add 600 µL of P1 solution (pink) to the tube containing the pellet (left over from the centrifuge tube). Resuspend the plasmids with a large (1 mL) micropipet in the solution by pipetting up and down. Make sure the material is completely
+                    suspended in the solution and not in chunks.</li>
+                  <li>Divide the solution from the previous step evenly (about 200 µL) among the tubes from step 1</li>
+                  <li>Mix the solutions carefully by inversion and let stand for 2-3 minutes</li>
+                  <li>Add 400 µL of P3 solution (yellow, found in the fridge) to each tube. Mix carefully and completely by inversion</li>
+                  <li>Centrifuge (with the centrifuge in the lab) the tubes for 2 minutes at the highest RPM (?)</li>
+                  <li>Obtain a small column for DNA extraction- label the inside of the cartridge and not the waste container on the outside</li>
+                  <li>Using a micropipette, load the supernatant of one the tubes (do one at a time) directly above the column</li>
+                  <li>Spin the cartridge for 1 minute. Dump the waste contents (from the outside container) after spinning</li>
+                  <li>Add 200 µL of wash buffer to the cartridge and repeat step 9</li>
+                  <li>Repeat steps 9 through 10 for the next tube</li>
+                  <li>Repeat step 9 for the last tube</li>
+                  <li>After all the tubes are empty, use 200 µL of endotoxin buffer and spin the cartridge for 1 minute. After spinning, dump the contents of the waste container</li>
+                  <li>Add 400 µL of wash buffer to the column, spin for 1 minute and then dump the waste contents. Repeat once</li>
+                  <li>Heat a small amount of elution buffer using an old PCR machine</li>
+                  <li>Discard the waste container and place a small sterile tube under the cartridge. Add 30 µL of heated elution buffer to the column. Spin for 1 minute. Take the sterile tube and close and label it</li>
+                  <li>Using a new sterile tube, repeat the previous step two more times. This will yield 3 sterile tubes of purified plasmids.</li>
+                  <li>Verify purity with spectrophotometer and gel.</li>
+                </ol>
+              </article>
+            </section>
+
+          </article>
+
+          <article id="pcr-button" class="page-component">
+            <h4>PCR Procedure</h4>
+
+            <section id="pcr" class="section-content">
+              <!-- Single PCR Reactions -->
+              <article>
+                <h5>Single PCR Reactions</h5>
+                <p>Sometimes individual reactions are set up. A standard scale used to be 50 ul but this is old fashioned, and generally nowadays a half or quarter scale is set up.</p>
+                <p>Occasionally when we need to produce a LOT of a reaction we might use a 100ul (2x scale ) or 200 ul (4x0 scale). This is only when we know the reaction works, as using this much enzyme is $$$. If doing this, you should set up the entire reaction in one tube (240 ul max  capacity) then divide init < 50 ul (preferably < 33ul) aliquots in different strip tubes, as 50 ul is the maximum volume thePCR machine can evenly heat. </p>
+                <figure class="project-figure">
+                  <img src="../../assets/images/exp2.png" alt="single pcr table">
+                </figure>
+                <p>All units are in µL</p>
+                <p>1U=2µL</p>
+              </article>
+              <!-- Procedure (without master mix), full/half/quarter scale -->
+              <article>
+                <h5>Procedure (without Master Mix), Full/Half/Quarter Scale</h5>
+                <ol>
+                  <li>Making the template DNA (which is a 1:1000 dil of mini prepped DNA into TE Buffer)
+                    <ol start="a">
+                      <li>Take the DNA isolated by mini prep and add 12 ul RTE (TE with 50ug/ml heat inactivated RNAse)</li>
+                      <li>Take 1 µL of this into a new test tube</li>
+                      <li>Add 1ml of TE (10mM tris 7.9 , 1 mM EDTA) Buffer</li>
+                    </ol>
+                  </li>
+                  <li>Into a new mini centrifuge tube add the following in a diamond shape, quantities will be determined in table 1
+                    <ul class="circle">
+                      <li>Template DNA (at bottom tip of diamond)</li>
+                      <li>Forward and Reverse Primers (at sides of diamond)</li>
+                      <li>dNTPs (at the top of the diamond)</li>
+                    </ul>
+                  </li>
+                  <li>Near the top of the diamond add the Q5 polymerase</li>
+                  <li>Pipet the buffer solution into the tube so that it washes the DNA, Primers, dNTPs, and polymerase down to the bottom
+                    <ul class="circle">
+                      <li>Gravity starts to work on anything 5µL or greater; so the other 1 to .25 µL will just stay suspended on the side of the tube till they are washed to the bottom</li>
+                      <li>Might be a good idea to bend the tip of the pipet because the glycerol in the polymerase makes it viscus and it may be hard to dispense out of the pipet</li>
+                    </ul>
+                  </li>
+                  <li>Add the water in the same fashion as the buffer, being sure to wash any remains to the bottom</li>
+                  <li>Once everything is added, quickly (for only a few seconds) use the small 100rpm centrifuge (located on the opposite side of the bench that the PCR thermocycler is on) to pull any remaining drops to the bottom</li>
+                  <li>Put into the Thermocycler and run on your chosen cycle (Q5_57_120 is a common cycle). You will be asked to enter the volume, which will be 50/25/12.5µL depending on which scale the PCR was run on (review table again)</li>
+                  <li>Take out PCR and put on IPRO shelf in the fridge/freezer near the incubator</li>
+                </ol>
+              </article>
+              <!-- Cycling Notes -->
+              <article>
+                <h5>Cycling Notes</h5>
+                <p>You need to select a PCR cycle, which has the following elements</p>
+                <ol>
+                  <li>Preheat (94-98 C for 2-5 min; Q cycles : 98C 5 min)
+                    <ol>
+                      <li>Denature (94 or 98 for 10-20 sec)</li>
+                      <li>Anneal (T determined by experiment and by primer Tm Commonly 55-65) for 10-20 sec</li>
+                      <li>Extension (generally 72C, tiem determined by amplicon length, generally < 1kb 60 sec, up to 4kb 120 sec. Varies based on experience)</li>
+                    </ol>
+                  </li>
+                  <li>Loop back to a… generally 29-34 times</li>
+                  <li>Polish 72 C 1-5 min</li>
+                  <li>Soak - 0 - 4 C forever</li>
+                </ol>
+                <p>Be sure to put tape with your name, date, and reaction name so we know who is running what</p>
+                <p>When done be sure to turn off run to stop soak, as the machine will build up condensation and pooled water will eventually leak in the electronics and destroy the machine!</p>
+                <p>A common cycle is Q5_57_120</p>
+              </article>
+              <!-- Mastermix Protocol -->
+              <article>
+                <h5>Mastermix Protocol</h5>
+                <p>When running many reactions where only some components vary, it is best (easiest and most consistent scientifically) to set up a  master mix with all but one item. For instance to test various primer sets on a common template (e.g. to test new primers)</p>
+                <figure class="project-figure">
+                  <img src="../../assets/images/exp3.png" alt="single pcr table">
+                </figure>
+                <p>You would then set up individual tube with 0.25 ul of each set of primers (P1 and P2, which will vary by reaction) and template DNA, and transfer 12 ul of the master mix to each. This reduced pipetting and increases accuracy.</p>
+              </article>
+            </section>
+
+          </article>
+
+          <article id="pcr-purify-button" class="page-component">
+            <h4>PCR Purification</h4>
+            <p>PCR fragments need to be purified, this ensures that it is just DNA material is present and prepares it for gibson, screening, and sequencing.</p>
+
+            <section id="pcr-purify" class="section-content">
+              <!-- Purification -->
+              <article>
+                <h5>Purification</h5>
+                <ol>
+                  <li>Get the yellow box called “DNA Clean & Concentrator-5” underneath one of the lab benches</li>
+                  <li>Take out ONE of the tubes with a small white cartridge at the bottom provided in the yellow box and put it into a new minicentrigue tubes</li>
+                  <li>We want to use 5 volumes of the PCR for the quantity of binding buffer
+                    <ol start="a">
+                      <li>There should be 22 µL of DNA in your PCR tubes
+                        <ul class="circle">
+                          <li>PCR ran with 25 µL - 3 µL used for gel electrophoresis= 22µL left in PCR tubes</li>
+                        </ul>
+                      </li>
+                      <li>5 volumes→ 22µL of PCR * 5 = 110 µL of binding buffer</li>
+                      <li>Add 110 µL of binding buffer to EACH of the PCR tubes
+                        <ul class="circle">
+                          <li>Pipet up and down (once is enough)</li>
+                          <li>Add to cartridge tube</li>
+                        </ul>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>Spin the cartridge down in centrifuge (1 min)
+                    <ul class="circle">
+                      <li>May need to be done twice if there is too much buffer solution (too much= buffer solution sitting in the centrifuge tube covers the cartridge)</li>
+                    </ul>
+                  </li>
+                  <li>Wash the cartridge with 200 µL of wash buffer, two times
+                    <ul class="circle">
+                      <li>Spin between washes (1 min)</li>
+                    </ul>
+                  </li>
+                  <li>Spin once empty, just to ensure everything spun down to the bottom tube
+                    <ul class="circle">
+                      <li>The once white cartridge may have turned blue/purple after this, have no fear this is fine.</li>
+                    </ul>
+                  </li>
+
+                  <li>Place the cartridge tube into a new minicentrigue tube
+                    <ul class="circle">
+                      <li>Make sure this is labeled WELL! This is what we will be keeping and we want to make sure we can find it later.</li>
+                    </ul>
+                  </li>
+                  <li>Elute with ≥6 µL of elution buffer
+                    <ul class="circle">
+                      <li>NM recommends 10 µL of elution buffer</li>
+                      <li>Helpful to heat elution buffer before use
+                        <ul class="circle">
+                          <li>Do this by turning on one of the ancient looking PCR machines and placing it in the holders. You do not have to close the lid, it may beep (which is fine.)</li>
+                        </ul>
+                      </li>
+                      <li>To elute properly, you should pipet the buffer DIRECTLY onto the cartridge
+                        <ul class="circle">
+                          <li>Bring the tip of the pipet to JUST OVER the cartridge, don’t let it wash down the sides of the tube</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>Centrifuge again</li>
+                  <li>After centrifugation, we will have our pure, amplified DNA fragments suspended in the centrifuge tube<ul class="circle">
+                      <li>To be sure we have what we want, we will measure with a spectrophotometer.</li>
+                    </ul>
+                  </li>
+                </ol>
+              </article>
+              <!-- Spectrophotometer -->
+              <article>
+                <h5>Spectrophotometer</h5>
+                <ol>
+                  <li>Add a small drop (1.8 µL) of water to zero/blank the instrument</li>
+                  <li>Choose the desired wavelength→ NM std</li>
+                  <li>Check the wavelength of the water right away
+                    <ul class="circle">
+                      <li>Make sure that is a straight line with no peaks</li>
+                    </ul>
+                  </li>
+                  <li>Check new water wavelength to ensure it matched the first</li>
+                  <li>Add small drop (1.8 µL) of sample and measure wavelength
+                    <ul class="circle">
+                      <li>Should be around 5.8</li>
+                    </ul>
+                  </li>
+                  <li>Email and record results to yourself for both paper and electronic records</li>
+                  <li>Clean up with a new drop of water, wipe down top and bottom of instrument</li>
+                </ol>
+              </article>
+            </section>
+
+          </article>
+
+          <article id="protein-purify-button" class="page-component">
+            <h4>Protein Purification</h4>
+            <p>This is a procedure that allows for PETase in E. Coli to be cultured and used to degrade and test the nanoparticles</p>
+
+            <section id="protein-purify" class="section-content">
+              <article>
+                <h5>Procedure</h5>
+                <ol>
+                  <li>Resuspend in 1.5 mL histag lysis buffer (pbs 1% triton, NO EDTA)</li>
+                  <li>Sonicate 20 seconds</li>
+                  <li>Transfer to Eppendorf tube</li>
+                  <li>Centrifuge max speed (10,000 rpm) 5 mins</li>
+                  <li>Transfer liquid into a new tube</li>
+                  <li>40 uL resin into each tube</li>
+                  <li>Keep tubes out 10 mins, agitate contents every 2 minutes</li>
+                  <li>Attach cartridge to syringe, pour into syringe, squeeze out liquid into waste and wash syringe with water. Keep cartridge</li>
+                  <li>Wash each syringe with 3 mL of 10 mM imidazole</li>
+                  <li>Spin on Eppendorf for 2 minutes to remove all the PBS</li>
+                  <li>Add 25 uL 500 mM imidazole to cartridge</li>
+                  <li>Spin for 2 minutes to elute</li>
+                </ol>
+              </article>
+            </section>
+
+          </article>
+        </div>
+      </section>
+      <!-- End of Protocols -->
+
+    </div>
+  </main>
+
+  <footer>
+    <section>
+      <p>Illinois Institute of Technology</p>
+      <p>All rights reserved</p>
+    </section>
+  </footer>
+  <script src="../../site.js"></script>
+</body>
+
+</html>
