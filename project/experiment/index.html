@@ -542,7 +542,77 @@
             <h4>PCR Procedure</h4>
 
             <section id="pcr" class="section-content">
-
+              <!-- Single PCR Reactions -->
+              <article>
+                <h5>Single PCR Reactions</h5>
+                <p>Sometimes individual reactions are set up. A standard scale used to be 50 ul but this is old fashioned, and generally nowadays a half or quarter scale is set up.</p>
+                <p>Occasionally when we need to produce a LOT of a reaction we might use a 100ul (2x scale ) or 200 ul (4x0 scale). This is only when we know the reaction works, as using this much enzyme is $$$. If doing this, you should set up the entire reaction in one tube (240 ul max  capacity) then divide init < 50 ul (preferably < 33ul) aliquots in different strip tubes, as 50 ul is the maximum volume thePCR machine can evenly heat. </p>
+                <figure class="project-figure">
+                  <img src="../../assets/images/exp2.png" alt="single pcr table">
+                </figure>
+                <p>All units are in µL</p>
+                <p>1U=2µL</p>
+              </article>
+              <!-- Procedure (without master mix), full/half/quarter scale -->
+              <article>
+                <h5>Procedure (without Master Mix), Full/Half/Quarter Scale</h5>
+                <ol>
+                  <li>Making the template DNA (which is a 1:1000 dil of mini prepped DNA into TE Buffer)
+                    <ol start="a">
+                      <li>Take the DNA isolated by mini prep and add 12 ul RTE (TE with 50ug/ml heat inactivated RNAse)</li>
+                      <li>Take 1 µL of this into a new test tube</li>
+                      <li>Add 1ml of TE (10mM tris 7.9 , 1 mM EDTA) Buffer</li>
+                    </ol>
+                  </li>
+                  <li>Into a new mini centrifuge tube add the following in a diamond shape, quantities will be determined in table 1
+                    <ul class="circle">
+                      <li>Template DNA (at bottom tip of diamond)</li>
+                      <li>Forward and Reverse Primers (at sides of diamond)</li>
+                      <li>dNTPs (at the top of the diamond)</li>
+                    </ul>
+                  </li>
+                  <li>Near the top of the diamond add the Q5 polymerase</li>
+                  <li>Pipet the buffer solution into the tube so that it washes the DNA, Primers, dNTPs, and polymerase down to the bottom
+                    <ul class="circle">
+                      <li>Gravity starts to work on anything 5µL or greater; so the other 1 to .25 µL will just stay suspended on the side of the tube till they are washed to the bottom</li>
+                      <li>Might be a good idea to bend the tip of the pipet because the glycerol in the polymerase makes it viscus and it may be hard to dispense out of the pipet</li>
+                    </ul>
+                  </li>
+                  <li>Add the water in the same fashion as the buffer, being sure to wash any remains to the bottom</li>
+                  <li>Once everything is added, quickly (for only a few seconds) use the small 100rpm centrifuge (located on the opposite side of the bench that the PCR thermocycler is on) to pull any remaining drops to the bottom</li>
+                  <li>Put into the Thermocycler and run on your chosen cycle (Q5_57_120 is a common cycle). You will be asked to enter the volume, which will be 50/25/12.5µL depending on which scale the PCR was run on (review table again)</li>
+                  <li>Take out PCR and put on IPRO shelf in the fridge/freezer near the incubator</li>
+                </ol>
+              </article>
+              <!-- Cycling Notes -->
+              <article>
+                <h5>Cycling Notes</h5>
+                <p>You need to select a PCR cycle, which has the following elements</p>
+                <ol>
+                  <li>Preheat (94-98 C for 2-5 min; Q cycles : 98C 5 min)
+                    <ol>
+                      <li>Denature (94 or 98 for 10-20 sec)</li>
+                      <li>Anneal (T determined by experiment and by primer Tm Commonly 55-65) for 10-20 sec</li>
+                      <li>Extension (generally 72C, tiem determined by amplicon length, generally < 1kb 60 sec, up to 4kb 120 sec. Varies based on experience)</li>
+                    </ol>
+                  </li>
+                  <li>Loop back to a… generally 29-34 times</li>
+                  <li>Polish 72 C 1-5 min</li>
+                  <li>Soak - 0 - 4 C forever</li>
+                </ol>
+                <p>Be sure to put tape with your name, date, and reaction name so we know who is running what</p>
+                <p>When done be sure to turn off run to stop soak, as the machine will build up condensation and pooled water will eventually leak in the electronics and destroy the machine!</p>
+                <p>A common cycle is Q5_57_120</p>
+              </article>
+              <!-- Mastermix Protocol -->
+              <article>
+                <h5>Mastermix Protocol</h5>
+                <p>When running many reactions where only some components vary, it is best (easiest and most consistent scientifically) to set up a  master mix with all but one item. For instance to test various primer sets on a common template (e.g. to test new primers)</p>
+                <figure class="project-figure">
+                  <img src="../../assets/images/exp3.png" alt="single pcr table">
+                </figure>
+                <p>You would then set up individual tube with 0.25 ul of each set of primers (P1 and P2, which will vary by reaction) and template DNA, and transfer 12 ul of the master mix to each. This reduced pipetting and increases accuracy.</p>
+              </article>
             </section>
 
           </article>
