@@ -93,6 +93,12 @@ main {
   height: 40vh;
 }
 
+#banner img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+}
+
 /* Layout stylings */
 
 footer section {
