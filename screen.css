@@ -376,6 +376,7 @@ main p {
 }
 
 .section-content.visible {
+  cursor: auto;
   max-height: 5000px;
   transition: all 1s ease-in;
 }
@@ -500,3 +501,19 @@ ul.circle {
 }
 
 /* End of experiment overview */
+
+/* Experiment section-content */
+
+.section-content h5 {
+  color: #00b98a;
+  font-family: Cloud, Calibri, Arial, serif;
+  font-size: 1.5em;
+  line-height: 1em;
+}
+
+.section-content .citations h3 {
+  font-family: Cloud, Calibri, Arial, serif;
+  font-size: 1.5em;
+}
+
+/* End of experiment section-content */
