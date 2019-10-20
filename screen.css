@@ -387,6 +387,8 @@ main p {
 }
 
 .project-figure img {
+  max-height: 50vh;
+  object-fit: scale-down;
   width: 70%;
 }
 
