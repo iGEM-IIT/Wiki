@@ -125,3 +125,21 @@ if (document.querySelector('#experiment-page')) {
   });
 
 } // End of design page
+
+// For the notebook page
+if (document.querySelector('#notebook-page')) {
+  console.log("this is the notebook page");
+
+  // get component buttons
+  var notepages = document.getElementsByClassName('nb-week');
+
+  // Click listener for every week component
+  for (let i = 0; i < notepages.length; i++) {
+    let noteWeek = notepages[i];
+    let noteContent = noteWeek.querySelector('.nb-week-content');
+
+    noteWeek.addEventListener('click', function(e) {
+      noteContent.classList.toggle('visible');
+    });
+  }
+} // End of notebook page
