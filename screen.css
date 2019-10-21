@@ -523,3 +523,58 @@ ul.circle {
 }
 
 /* End of experiment section-content */
+
+/* Notebook Container */
+#nb-container {
+  border: medium solid #7b76f4;
+  border-radius: 1em;
+  cursor: pointer;
+  /* padding: 0.5em; */
+}
+
+.nb-week {
+  padding: 1em 0.5em;
+}
+
+.nb-week h4 {
+  /* background-color: #d1fffd; */
+  border-bottom: #00fff3 solid thin;
+  font-family: Cloud, Calibri, Arial, serif;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.nb-week .author {
+  font-size: 0.8em;
+  line-height: 2em;
+  margin-bottom: 0.5em;
+}
+
+.nb-week .author::before {
+  content: "Completed by: ";
+}
+
+.nb-week-content {
+  max-height: 0;
+  overflow-y: hidden;
+  transition: all 0.5s ease-out;
+}
+
+.nb-week-content.visible {
+  margin-top: 1em;
+  cursor: auto;
+  max-height: 5000px;
+  transition: all 0.5s ease-in;
+}
+
+.nb-week-content p {
+  line-height: 1.3em;
+  margin: 0;
+}
+
+#nb-container,
+#pdf-container {
+  margin: 2em 0;
+}
+
+/* End of Notebook Container */
